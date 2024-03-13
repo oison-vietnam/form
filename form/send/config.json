@@ -4,5 +4,6 @@
   "admin_subject": "【SITE_NAME】お客様からのお申し込み受信",
   "admin_email": "hoangphu.nam0604@gmail.com",
   "admin_bcc": false,
-  "customer_subject": "【SITE_NAME】お申し込み送信のお知らせ"
+  "customer_subject": "【SITE_NAME】お申し込み送信のお知らせ",
+  "customer_reply_email": "application@domain.com"
 }
