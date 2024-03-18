@@ -1,0 +1,4 @@
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(.*).html/* https://alles-group.jp/$1.html [R=301,L]
