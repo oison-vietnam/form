@@ -125,6 +125,7 @@
     }
   }
 }
+textarea,
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -176,6 +177,9 @@ input[type="checkbox"] {
     top: 0;
     left: 0;
   }
+}
+textarea{
+  height: 8rem;
 }
 
 #applyForm {

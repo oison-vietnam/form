@@ -141,6 +141,7 @@
   }
 }
 
+textarea,
 input[type=text],
 input[type=email],
 input[type=number],
@@ -196,6 +197,10 @@ input[type=checkbox]::before {
   transition: 0.2s;
   top: 0;
   left: 0;
+}
+
+textarea {
+  height: 8rem;
 }
 
 #applyForm dl {
