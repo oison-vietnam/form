@@ -401,27 +401,6 @@ a {
   }
 }
 
-.thanks-content {
-  text-align: center;
-}
-.thanks-content .line {
-  background-color: #07b53b;
-  color: #fff;
-  padding: 3rem;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  margin: 3rem auto;
-  display: block;
-  text-decoration: none;
-  transition: opacity 0.2s;
-  border-radius: 0.3rem;
-}
-.thanks-content .line1 {
-  margin: 10px auto;
-  width: 80%;
-  border: 1px dashed #fff;
-}
-
 .back_to_top {
   margin-top: 5rem;
 }

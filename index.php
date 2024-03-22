@@ -1,4 +1,4 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/functions.php";
+<?php require_once __DIR__. "/functions.php";
 global $is_front_page;
 $is_front_page = true; ?>
 <?php section('head'); ?>
@@ -8,33 +8,30 @@ $is_front_page = true; ?>
 <meta property="og:type" content="website">
 <meta property="og:title" content="TOP_TITLE">
 <meta property="og:description" content="TOP_DESCRIPTION">
-<meta property="og:url" content="<?php echo BASE_URL ?>/">
-<link rel="canonical" href="<?php echo MAIN_URL ?>/">
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "SITE_NAME",
-      "item": "<?php echo BASE_URL; ?>/"
-    }]
-  }
-</script>
+<meta property="og:url" content="<?php home_url(); ?>">
+<link rel="canonical" href="<?php home_url(); ?>">
 <?php endsection(); ?>
 <?php section('stylesheet'); ?>
 <?php if (is_not_test_speed()) : ?>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@900&display=swap" rel="stylesheet">
-
 <?php endif; ?>
 <link rel="stylesheet" href="<?php asset('libs//aos/aos.css') ?>">
-
 <?php if (is_test_speed()) : ?>
   <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
 <?php endif; ?>
+<?php endsection(); ?>
+<?php section('after_head'); ?>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "SITE_NAME",
+        "item": "<?php home_url(); ?>"
+      }]
+    }
+  </script>
 <?php endsection(); ?>
 <?php section('content'); ?>
 <main>
@@ -42,4 +39,4 @@ $is_front_page = true; ?>
 <?php endsection(); ?>
 <?php section('script'); ?>
 <?php endsection(); ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/master.php"; ?>
+<?php require_once __DIR__ . "/master.php"; ?>

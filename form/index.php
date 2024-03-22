@@ -1,13 +1,14 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/functions.php"; ?>
+<?php require_once __DIR__ . "/../functions.php"; ?>
 <?php section('head'); ?>
 <title>お申し込み｜買取デポ -商品券・ギフト券の買取サイト-</title>
 <meta name="description" content="『買取デポ』へお申し込み希望のお客様は、こちらのフォーム入力を行い、手続きを完了してください。迅速な審査と丁寧なサポートで、ご要望に応えます。">
-<meta property="og:locale" content="ja_JP">
-<meta property="og:type" content="article">
 <meta property="og:title" content="お申し込み｜買取デポ -商品券・ギフト券の買取サイト-">
 <meta property="og:description" content="『買取デポ』へお申し込み希望のお客様は、こちらのフォーム入力を行い、手続きを完了してください。迅速な審査と丁寧なサポートで、ご要望に応えます。">
-<meta property="og:url" content="<?php echo BASE_URL ?>/form/">
-<link rel="canonical" href="<?php echo MAIN_URL ?>/form/">
+<?php endsection(); ?>
+<?php section('stylesheet'); ?>
+<link rel="stylesheet" href="<?php asset('css/form.css', true) ?>">
+<?php endsection(); ?>
+<?php section('after_head'); ?>
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -16,20 +17,17 @@
         "@type": "ListItem",
         "position": 1,
         "name": "【SITE_NAME】",
-        "item": "<?php echo BASE_URL; ?>/"
+        "item": "<?php home_url(); ?>"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "お申し込み",
-        "item": "<?php echo BASE_URL; ?>form/"
+        "item": "<?php home_url('form'); ?>"
       }
     ]
   }
 </script>
-<?php endsection(); ?>
-<?php section('stylesheet'); ?>
-<link rel="stylesheet" href="<?php asset('css/form.css', true) ?>">
 <?php endsection(); ?>
 <?php section('content'); ?>
 <main>
@@ -489,4 +487,4 @@
 <script src="<?php asset('libs/multi-form.js'); ?>"></script>
 <script src="<?php asset('js/form.js', true); ?>"></script>
 <?php endsection(); ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/master.php"; ?>
+<?php require_once __DIR__ . "/../master.php"; ?>
