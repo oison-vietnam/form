@@ -9,6 +9,12 @@ $admin_subject = '';
 $customer_subject = '';
 $customer_reply_email = false;
 
+// Chặn mở link trực tiếp
+if ($_SERVER['REQUEST_METHOD'] != 'POST') :
+  header('Location: ../');
+  exit;
+endif;
+
 $config = file_get_contents(__DIR__."/config.json");
 $config = json_decode($config,true);
 extract($config);
