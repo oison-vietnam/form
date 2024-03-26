@@ -3,22 +3,34 @@ $(document).ready(function () {
 
   const loadingHtml = $(`<div id="form-sending">送信中</div>`);
 
-  $('[inputmode="tel"], [inputmode="decimal"], [inputmode="numeric"]').keydown(function (event) {
+  $('[type="tel"], [inputmode="tel"], [inputmode="decimal"], [inputmode="numeric"]').keydown(function (event) {
     var charCode = (event.which) ? event.which : event.keyCode
     if (event.shiftKey) return false;
     if (!event.ctrlKey && charCode > 31 && (charCode < 48 || charCode > 57) && (charCode < 96 || charCode > 105))
       return false;
     return true;
   });
-  $('[inputmode="tel"], [inputmode="decimal"], [inputmode="numeric"]').change(function () {
+  $('[type="tel"], [inputmode="tel"], [inputmode="decimal"], [inputmode="numeric"]').change(function () {
     const oldValue = $(this).val()
-    const newValue = oldValue.replace(/^\D+/g, '');
+    const newValue = oldValue.replace(/[^0-9]/g, '');
     $(this).val(newValue);
   })
-
-  $('[inputmode="tel"], [inputmode="decimal"], [inputmode="numeric"]').keyup(function () {
+  $('[type="tel"], [inputmode="tel"], [inputmode="decimal"], [inputmode="numeric"]').focusout(function () {
     const oldValue = $(this).val()
-    const newValue = oldValue.replace(/^\D+/g, '');
+    const newValue = oldValue.replace(/[^0-9]/g, '');
+    $(this).val(newValue);
+  })
+  $("form").on('keyup keypress', function (e) {
+    var keyCode = e.keyCode || e.which;
+    if (keyCode === 13) {
+      e.preventDefault();
+      return false;
+    }
+  });
+
+  $('[type="tel"], [inputmode="tel"], [inputmode="decimal"], [inputmode="numeric"]').keyup(function () {
+    const oldValue = $(this).val()
+    const newValue = oldValue.replace(/[^0-9]/g, '');
     $(this).val(newValue);
   });
 
