@@ -5,3 +5,13 @@ RewriteEngine On
 RewriteBase /
 
 ErrorDocument 404 /404/
+
+
+# Remove index.php / index.html
+RewriteCond %{THE_REQUEST} ^.*/index.(html|php)
+RewriteRule ^(.*)index.(html|php)$ https://domain.com/$1 [R=301,L]
+
+# redirect http,www to https, non-www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. 
+RewriteRule ^(.*)$ https://domain.com/$1 [R=301,L]
