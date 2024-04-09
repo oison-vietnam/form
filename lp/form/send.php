@@ -1,23 +1,21 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/.mailer/mailer.php";
-$from_email = '';
-$from_name = '';
-$admin_email = '';
-$admin_bcc =  false;
-$admin_subject = '';
-$customer_subject = '';
-$customer_reply_email = false;
+$MAILER_DIR = "/.mailer";
+if (str_contains($_SERVER['REQUEST_URI'], '/thumucdemo/')) {
+  $MAILER_DIR = "/thumucdemo/.mailer";
+}
+require_once __DIR__ . "/../functions.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . $MAILER_DIR . "/mailer.php";
 
-// Chặn mở link trực tiếp
-if ($_SERVER['REQUEST_METHOD'] != 'POST') :
-  header('Location: ../');
-  exit;
-endif;
+checkPostFormWithConfirm();
 
-$config = file_get_contents(__DIR__."/config.json");
-$config = json_decode($config,true);
-extract($config);
+$from_email = get_config('from_email');
+$from_name = get_config('from_name');
+$admin_email = get_config('admin_email');
+$admin_bcc = get_config('admin_bcc');
+$admin_subject = get_config('admin_subject');
+$customer_subject = get_config('customer_subject');
+$customer_reply_email = get_config('customer_reply_email');
 
 $_POST['purchased_products'] = implode(", ", $_POST['purchased_product']?:[]);
 if(isset($_POST['purchased_product']))

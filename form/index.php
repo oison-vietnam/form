@@ -17,13 +17,13 @@
         "@type": "ListItem",
         "position": 1,
         "name": "【SITE_NAME】",
-        "item": "<?php home_url(); ?>"
+        "item": "<?php lp_home_url(); ?>"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "お申し込み",
-        "item": "<?php home_url('form'); ?>"
+        "item": "<?php lp_home_url('form'); ?>"
       }
     ]
   }
@@ -36,7 +36,7 @@
       <h1 class="section_title section_title_img">
         買取査定お申し込み
       </h1>
-      <form action="./send/" method="POST" id="applyForm" enctype="multipart/form-data">
+      <form action="./send.php" method="POST" id="applyForm" enctype="multipart/form-data">
        
         <div class="tab step2">
           <div class="progressbar-wrap">

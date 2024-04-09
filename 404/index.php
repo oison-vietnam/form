@@ -1,4 +1,7 @@
-<?php require_once(__DIR__ . "/../functions.php"); ?>
+<?php
+global $robots;
+$robots = 'noindex';
+require_once(__DIR__ . "/../functions.php"); ?>
 <?php section('head'); ?><title>404ページ ｜買取フランク</title>
 <meta name="description" content="『買取フランク』の404ページ についての情報を提供、ご紹介いたします。お客様の個人情報の取り扱いについての方針や、その保護に関する取り組みをご確認ください。">
 <meta property="og:title" content="404ページ ｜買取フランク">
@@ -13,13 +16,13 @@
         "@type": "ListItem",
         "position": 1,
         "name": "【買取フランク Kaitori Frank】",
-        "item": "<?php home_url(); ?>"
+        "item": "<?php lp_home_url(); ?>"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "404ページ",
-        "item": "<?php home_url('404'); ?>"
+        "item": "<?php lp_home_url('404'); ?>"
       }
     ]
   }

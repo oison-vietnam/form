@@ -8,8 +8,8 @@ $is_front_page = true; ?>
 <meta property="og:type" content="website">
 <meta property="og:title" content="TOP_TITLE">
 <meta property="og:description" content="TOP_DESCRIPTION">
-<meta property="og:url" content="<?php home_url(); ?>">
-<link rel="canonical" href="<?php home_url(); ?>">
+<meta property="og:url" content="<?php lp_home_url(); ?>">
+<link rel="canonical" href="<?php lp_home_url(); ?>">
 <?php endsection(); ?>
 <?php section('stylesheet'); ?>
 <?php if (is_not_test_speed()) : ?>
@@ -28,7 +28,7 @@ $is_front_page = true; ?>
         "@type": "ListItem",
         "position": 1,
         "name": "SITE_NAME",
-        "item": "<?php home_url(); ?>"
+        "item": "<?php lp_home_url(); ?>"
       }]
     }
   </script>

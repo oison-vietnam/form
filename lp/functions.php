@@ -1,29 +1,45 @@
 <?php
 date_default_timezone_set('Asia/Tokyo');
 define('CORE', true);
-define('LP', "lp");
-function get_domain_url()
+
+function line_url()
 {
-  $lp = "";
-  if(defined("LP"))
-    $lp = "/".LP;
-  return "https://{$_SERVER['SERVER_NAME']}{$lp}";
+  echo get_config('line_url');
 }
-function site_url($path = "")
+function get_config($key)
 {
-  echo get_domain_url() . "/" . $path;
+
+  $config = file_get_contents(__DIR__ . "/config.json");
+  $config = json_decode($config, true);
+  return isset($config[$key]) ? $config[$key] : null;
 }
 
-function get_home_url($path = "")
+function meta_robots()
 {
+  $meta_robots = get_config('meta_robots');
+  if ($meta_robots) :
+    echo "<meta name=\"robots\" content=\"{$meta_robots}\">\n";
+  else :
+    global $robots;
+    if($robots){
+      echo "<meta name=\"robots\" content=\"{$robots}\">\n";
+    }else{
+    echo "\n";
+  }
+  endif;
+}
+
+function get_lp_home_url($path = "")
+{
+  $lp = get_config('lp');
   $domain = get_domain();
-  $domain .= "/" . (LP ?  LP . "/" : "");
+  $domain .= "/" . ($lp ?  $lp . "/" : "");
   $path =  $path ? $path . "/" : "";
   return $domain . $path;
 }
-function home_url($path = "")
+function lp_home_url($path = "")
 {
-  echo get_home_url($path);
+  echo get_lp_home_url($path);
 }
 function get_domain()
 {
@@ -55,12 +71,14 @@ function current_url()
 {
   echo get_current_url();
 }
+
 function get_current_canonical()
 {
   $current_url = get_current_url();
+  $lp = get_config('lp');
   //remove lp
-  if(LP)
-    return str_replace("/" . LP."/", "/", $current_url);
+  if ($lp)
+    return str_replace("/" .  $lp, "", $current_url);
   return $current_url;
 }
 function current_canonical()
@@ -68,8 +86,9 @@ function current_canonical()
   echo get_current_canonical();
 }
 
-function asset($file){
-  echo get_home_url()."assets/".$file;
+function asset($file)
+{
+  echo get_lp_home_url() . "assets/" . $file;
 }
 function stack($stack)
 {
@@ -102,4 +121,15 @@ function is_test_speed()
 function is_not_test_speed()
 {
   return !is_test_speed();
+}
+function get_image($img, $alt)
+{
+  $img_path = "assets/images/{$img}";
+  list($width, $height) = getimagesize(__DIR__ . "/{$img_path}");
+  $src = get_lp_home_url() . $img_path;
+  return "<img src=\"{$src}\" alt=\"{$alt}\" width=\"{$width}\" height=\"{$height}\">";
+}
+function the_image($img, $alt)
+{
+  echo get_image($img, $alt);
 }

@@ -1,4 +1,7 @@
-<?php require_once __DIR__ . "/../functions.php"; ?>
+<?php 
+global $robots;
+$robots = 'noindex';
+require_once __DIR__ . "/../functions.php"; ?>
 <?php section('head'); ?>
 <title>送信完了｜買取デポ -商品券・ギフト券の買取サイト-</title>
 <meta name="description" content="『買取デポ』へのお申し込みが正常に送信されました。手続きが完了したことをお知らせします。詳細な内容については、ご入力いただいたメールアドレスに確認メールをお送りしています。">
@@ -22,13 +25,13 @@
         "@type": "ListItem",
         "position": 1,
         "name": "【SITE_NAME】",
-        "item": "<?php home_url(); ?>"
+        "item": "<?php lp_home_url(); ?>"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "送信完了",
-        "item": "<?php home_url('thanks'); ?>"
+        "item": "<?php lp_home_url('thanks'); ?>"
       }
     ]
   }
@@ -71,7 +74,7 @@ if(file_exists( __DIR__ . "/tracking_body.php")) require_once __DIR__ . "/tracki
           お手数ですが、<br class="hide-pc">再度ご連絡くださいますようお願い致します。
         </p>
         <p class="back_to_top">
-          <a href="<?php home_url(); ?>">TOPに戻る</a>
+          <a href="<?php lp_home_url(); ?>">TOPに戻る</a>
         </p>
       </div>
     </div>

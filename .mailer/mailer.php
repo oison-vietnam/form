@@ -1,6 +1,24 @@
 <?php
 
 
+/**
+ * 
+ * Kiểm tra đây nếu  là phương thức POST và có đầu vào confirm (được thêm từ javascript ở bước confirm)
+ * Nếu không phải thì trả lại về form
+ * 
+ */
+function checkPostFormWithConfirm()
+{
+  if ($_SERVER['REQUEST_METHOD'] != 'POST' || getData('_confirm') != 'form_step_confirm') :
+    header('Location: ./');
+    exit;
+  endif;
+}
+function getData($field)
+{
+  return isset($_POST[$field]) ? $_POST[$field] : null;
+}
+
 function send_email($subject, $body, $to, $reply = null, $bcc = null, $photos = [])
 {
   global  $from_email;
