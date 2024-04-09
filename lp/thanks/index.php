@@ -31,7 +31,7 @@ $robots = 'noindex';
         "@type": "ListItem",
         "position": 2,
         "name": "送信完了",
-        "item": "<?php lp_home_url('thanks'); ?>"
+        "item": "<?php current_url(); ?>"
       }
     ]
   }

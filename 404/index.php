@@ -22,7 +22,7 @@ require_once(__DIR__ . "/../functions.php"); ?>
         "@type": "ListItem",
         "position": 2,
         "name": "404ページ",
-        "item": "<?php lp_home_url('404'); ?>"
+        "item": "<?php current_url(); ?>"
       }
     ]
   }

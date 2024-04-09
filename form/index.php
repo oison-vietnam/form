@@ -23,7 +23,7 @@
         "@type": "ListItem",
         "position": 2,
         "name": "お申し込み",
-        "item": "<?php lp_home_url('form'); ?>"
+        "item": "<?php current_url(); ?>"
       }
     ]
   }
