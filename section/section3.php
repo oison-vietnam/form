@@ -1,0 +1,99 @@
+<?php
+
+/**
+ * REDIRECT IF NOT CORE
+ */
+if (!defined('CORE')) {
+  header('Location: ../');
+  exit;
+}
+?>
+<div id="section3">
+  <div class="section_title">
+    <h2 class="section_title_txt">
+      <span class="number">03</span>
+      <span class="txt">買取プランについて</span>
+    </h2>
+  </div>
+  <div class="section_desc">
+    <p>当店の買取プランは</p>
+    <p class="txt_yellow">
+      <span class="txt_gray">✔</span>先払い撮影プラン［写真を送って査定］<br>
+      <span class="txt_gray">✔</span>後払い郵送プラン［商品を送って査定］
+    </p>
+    <p>
+      の２種類がございます。<br>
+      お客様の都合に合わせてお選びが可能です。
+    </p>
+  </div>
+  <div class="groups">
+    <div class="item">
+      <div class="item_detail">
+        <div class="label">先払い撮影プラン</div>
+        <div class="content">
+          <div class="arrow arrow_left">
+            <span>②写真から査定～先払いでお振込み</span>
+            <img src="<?php asset('images/section3_arrow11.svg'); ?>" alt="②写真から査定～先払いでお振込み" width="390" height="50">
+          </div>
+          <div class="group">
+            <div class="img">
+              <?php the_image('section3_img11.webp', '先払い撮影プラン'); ?>
+            </div>
+            <div class="detail">
+              <div class="txt_label">先払い撮影プラン</div>
+              <div class="percent txt_grd">60%</div>
+              <div class="txt">買取率</div>
+            </div>
+            <div class="img">
+              <?php the_image('section3_img12.webp', '先払い撮影プラン'); ?>
+            </div>
+          </div>
+          <div class="arrow">
+            <img src="<?php asset('images/section3_arrow12.svg'); ?>" alt="①商品を撮影後、当店へ送信③入金後、後日商品を郵送" width="390" height="50">
+            <span>
+              ①商品を撮影後、当店へ送信<br>
+              ③入金後、後日商品を郵送
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="item_bg">
+        <img src="<?php asset('images/section3_item_bg1.svg'); ?>" alt="オススメのポイント" width="560" height="435">
+      </div>
+    </div>
+    <div class="item">
+
+      <div class="item_detail">
+        <div class="label">先払い撮影プラン</div>
+        <div class="content">
+          <div class="arrow">
+            <span>①商品を指定の住所へ郵送</span>
+            <img src="<?php asset('images/section3_arrow21.svg'); ?>" alt="②写真から査定～先払いでお振込み" width="390" height="50">
+          </div>
+          <div class="group">
+            <div class="img">
+              <?php the_image('section3_img21.webp', '後払い郵送プラン'); ?>
+            </div>
+            <div class="detail">
+              <div class="txt_label">後払い郵送プラン</div>
+              <div class="percent txt_grd">90%</div>
+              <div class="txt">買取率</div>
+            </div>
+            <div class="img">
+              <?php the_image('section3_img22.webp', '後払い郵送プラン'); ?>
+            </div>
+          </div>
+          <div class="arrow arrow_left">
+            <img src="<?php asset('images/section3_arrow22.svg'); ?>" alt="①商品を撮影後、当店へ送信③入金後、後日商品を郵送" width="390" height="50">
+            <span>
+              ②商品到着後に査定～お振込み
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="item_bg">
+        <img src="<?php asset('images/section3_item_bg2.svg'); ?>" alt="オススメのポイント" width="560" height="435">
+      </div>
+    </div>
+  </div>
+</div>

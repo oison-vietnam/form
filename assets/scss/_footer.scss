@@ -1,0 +1,13 @@
+#site_footer {
+  background-color: #050314;
+  padding: 7rem 2rem;
+  text-align: center;
+  .footer_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    .copyright {
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -1,7 +1,10 @@
 <?php
 date_default_timezone_set('Asia/Tokyo');
 define('CORE', true);
-
+function site_name()
+{
+  echo get_config('site_name');
+}
 function line_url()
 {
   echo get_config('line_url');
@@ -21,11 +24,11 @@ function meta_robots()
     echo "<meta name=\"robots\" content=\"{$meta_robots}\">\n";
   else :
     global $robots;
-    if($robots){
+    if ($robots) {
       echo "<meta name=\"robots\" content=\"{$robots}\">\n";
-    }else{
-    echo "\n";
-  }
+    } else {
+      echo "\n";
+    }
   endif;
 }
 
@@ -122,14 +125,15 @@ function is_not_test_speed()
 {
   return !is_test_speed();
 }
-function get_image($img, $alt)
+function get_image($img, $alt, $class = '')
 {
   $img_path = "assets/images/{$img}";
   list($width, $height) = getimagesize(__DIR__ . "/{$img_path}");
   $src = get_lp_home_url() . $img_path;
-  return "<img src=\"{$src}\" alt=\"{$alt}\" width=\"{$width}\" height=\"{$height}\">";
+  $class = $class ? "class=\"{$class}\"" : "";
+  return "<img {$class} src=\"{$src}\" alt=\"{$alt}\" width=\"{$width}\" height=\"{$height}\">";
 }
-function the_image($img, $alt)
+function the_image($img, $alt, $class = '')
 {
-  echo get_image($img, $alt);
+  echo get_image($img, $alt, $class);
 }

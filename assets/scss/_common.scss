@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  @include sp {
+    font-size: calc(10 / 375 * 100vw);
+  }
+}
+body {
+  font-family: "DotGothic16", "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  > img {
+    display: none;
+  }
+}
+.txt_grd {
+  background-image: linear-gradient(to right, #ff00be 0%, #ca58ff 30%, #3aa1ff 70%, #3fead7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button {
+  display: inline-block;
+  border: 0.5rem solid #fff;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  transition: 0.3s;
+  filter: drop-shadow(0 0 1rem #fff);
+  .button_wrap {
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 3rem 1.5rem 5.5rem;
+    background-image: linear-gradient(to right, #29eedb 0%, #29eedb 20%, #ecec32 80%, #ecec32 100%);
+
+    span {
+      font-size: 2rem;
+      letter-spacing: 0.1em;
+      transition: 0.3s;
+      text-shadow: 0 0 1rem #ffffff;
+      strong {
+        font-size: 2.5rem;
+      }
+    }
+    &::after {
+      display: block;
+      content: "";
+      width: 5rem;
+      height: 5rem;
+      background-image: url(../images/button-arrow.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  &:hover {
+    filter: drop-shadow(0 0 1rem #000);
+    .button_wrap span {
+      text-shadow: 0 0 1rem #000;
+    }
+  }
+}
+.txt_yellow {
+  color: #e7fb00;
+}
+.txt_gray {
+  color: #494949;
+}
+.section_title {
+  text-align: center;
+  margin-bottom: 5rem;
+  .number {
+    display: block;
+    font-family: "Oswald";
+    font-weight: bold;
+    font-size: 12rem;
+    line-height: 1;
+    background-color: rgba(173, 40, 180, 0.7);
+    background-image: url(../images/number_bg.png);
+    background-size: 1.2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: -4.5rem;
+  }
+  .txt {
+    position: relative;
+    z-index: +2;
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 1.5rem 3rem 2rem;
+    background-image: url(../images/title_border.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+}
+.section_desc {
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 0.05;
+  margin-bottom: 5rem;
+}

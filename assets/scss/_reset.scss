@@ -1,0 +1,32 @@
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  padding: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: #dd0000;
+}
