@@ -33,6 +33,13 @@ $(document).ready(function () {
     const newValue = oldValue.replace(/[^0-9]/g, '');
     $(this).val(newValue);
   });
+  $("input").on('input', function () {
+    if ($(this).val() != "") {
+      $(this).addClass('valid')
+    } else {
+      $(this).removeClass('valid')
+    }
+  })
 
   $.validator.addMethod('filesize', function (value, element, param) {
     return this.optional(element) || (element.files[0].size <= param * 1000000)
@@ -194,7 +201,7 @@ $(document).ready(function () {
       },
       afterNavigate: function (form, step) {
 
-        if (step == 3) {
+        if (step == 1) {
           if ($("[name='_confirm']").length == 0)
             form.prepend($(`<input type='hidden' value='form_step_confirm' name='_confirm'>`))
 

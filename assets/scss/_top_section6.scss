@@ -1,0 +1,102 @@
+#faq {
+  background-color: #fff500;
+  background-image: url(../images/faq_bg.webp);
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: +1;
+  padding-top: 20rem;
+  padding-bottom: 15rem;
+  margin-top: -25rem;
+  overflow: hidden;
+  @include sp {
+    background-color: #000000;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 10rem;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    background-position: top center;
+  }
+
+  .faqs {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 6rem;
+    @include sp {
+      flex-direction: column;
+      gap: 3rem;
+    }
+    .faq_group {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      position: relative;
+      @include pc {
+        width: 50%;
+      }
+    }
+    .faq {
+      border: 0.3rem solid #ff00e5;
+      box-shadow: 0 0 0.5rem #ff00e5;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2.5rem 1.5rem;
+      .question {
+        border-bottom: 0.1rem solid #6495b1;
+        padding: 1rem;
+      }
+      .answer {
+        padding: 2rem 1rem;
+        line-height: 2.1;
+      }
+    }
+  }
+  .faq_group_left {
+    &::before {
+      content: "";
+      width: 11rem;
+      height: 10rem;
+      background-image: url(../images/faq_icon1.svg);
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(-50%, -50%);
+      z-index: +3;
+    }
+  }
+  .faq_group_right {
+    &::before,
+    &::after {
+      content: "";
+      width: 11rem;
+      height: 10rem;
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      z-index: +3;
+    }
+    &::before {
+      left: 0;
+      bottom: 0;
+      background-image: url(../images/faq_icon2.svg);
+      transform: translate(20%, 130%);
+    }
+
+    &::after {
+      right: 0;
+      top: 0;
+      transform: translate(10%, -120%);
+      background-image: url(../images/faq_icon3.svg);
+    }
+  }
+}

@@ -61,6 +61,11 @@ require_once __DIR__ . "/functions.php"; ?>
             <img class="logo" src="<?php asset('images/logo-footer.svg') ?>" alt="<?php site_name(); ?>" width="274" height="78">
           </a>
         </div>
+        <ul class="menu_footer">
+          <li>
+            <a class="txt_grd" href="<?php lp_home_url('privacy-policy'); ?>">プライバシーポリシー</a>
+          </li>
+        </ul>
         <p class="copyright">
           <span class="txt_grd">Copyright © 2024 アルテミス Corporation.</span>
         </p>
@@ -68,12 +73,13 @@ require_once __DIR__ . "/functions.php"; ?>
     </div>
   </footer>
   <a href="<?php lp_home_url(); ?>" id="back_to_top">
-    <span class="btt-inn">
-      <img src="<?php asset('images/back_to_top.svg') ?> " alt="To TOP" width="70" height="71">
+    <span class="inn">
+      <img src="<?php asset('images/icon_to_top.svg') ?> " alt="To TOP" width="70" height="71">
     </span>
   </a>
   <?php stack('footer'); ?>
   <script src="<?php asset('libs/jquery.js'); ?>"></script>
+  <script src="<?php asset('libs/jquery.inview.min.js'); ?>"></script>
   <script src="<?php asset('js/script.js'); ?>"></script>
   <?php stack('script'); ?>
 </body>

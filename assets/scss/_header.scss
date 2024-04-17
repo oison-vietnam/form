@@ -5,13 +5,24 @@
   top: 0;
   left: 0;
   background-image: url(../images/header_bg.svg);
-  padding: 4rem 1rem 7.5rem;
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: top left;
+  @include sp {
+    padding: 2rem 1rem 3.5rem;
+  }
+  @include pc {
+    padding: 4rem 1rem 7.5rem;
+  }
 }
 .header_logo {
   display: inline-block;
   a {
     display: block;
+  }
+  .logo {
+    @include sp {
+      width: 11.1rem;
+    }
   }
 }

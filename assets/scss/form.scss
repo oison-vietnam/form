@@ -31,7 +31,7 @@
   margin-bottom: 0;
   margin-top: 1em;
   text-align: center;
-  @include sp{
+  @include sp {
     font-size: 1.4em;
   }
 }
@@ -48,12 +48,13 @@
     p.ttl-top {
       margin-bottom: 2rem;
       font-weight: bold;
-      color: #dd0000;
+      background-image: linear-gradient(to right, #ff00be 0%, #ff00be 29%, #3aa1ff 72%, #3fead7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     p.ttl {
       margin-bottom: 0.8rem;
       font-weight: bold;
-      color: #dd0000;
     }
   }
 }
@@ -104,7 +105,7 @@
       border-color: #fff #fff transparent transparent;
       transform: translateY(-50%) rotate(45deg);
       transition: all 0.3s;
-      @include sp{
+      @include sp {
         right: 1.2rem;
       }
     }
@@ -141,10 +142,14 @@ input[type="password"] {
   outline: none;
   font-weight: 500;
   word-break: break-all;
-  border: 1px solid rgb(133, 133, 133);
-  border-radius: 3px;
-  background-color: #fff;
-  color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid;
+  border-image: linear-gradient(90deg, #ff00be 0%, #ff00be 29%, #3aa1ff 72%, #3fead7 100%) 2;
+  color: #fff;
+  &.valid {
+    background-color: #fff;
+    color: #000;
+  }
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -155,21 +160,16 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #ffffff;
-  border: 1px solid #dd0000;
+  background-color: #fff;
+  border: 1px solid #ff00be;
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  &:checked {
-    background-color: #dd0000;
-  }
   &::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(../images/icon-check.svg);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: 1em;
     -webkit-transition: 0.2s;
@@ -177,14 +177,22 @@ input[type="checkbox"] {
     top: 0;
     left: 0;
   }
+  &:checked {
+    background-color: #ff00be;
+    &::before {
+      background-image: url(../images/icon-check.svg);
+      background-repeat: no-repeat;
+    }
+  }
 }
-textarea{
+textarea {
   height: 8rem;
 }
 
 #applyForm {
   dl {
-    border: 1px solid #e3e3e3;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #ff00be 0%, #ff00be 29%, #3aa1ff 72%, #3fead7 100%) 2;
     margin: 0;
     @include pc {
       display: flex;
@@ -218,7 +226,6 @@ textarea{
       }
     }
     dd {
-      background: #fff;
       padding: 1.5rem;
       margin: 0;
       @include pc {
@@ -228,16 +235,18 @@ textarea{
   }
 }
 .date_group {
-  display: flex;
-  align-items: center;
   input {
-    width: 8rem;
+    width: 11rem;
     @include pc {
-      width: 12rem;
     }
   }
   span {
     margin-right: 1rem;
+  }
+  @include sp {
+    #year {
+      margin-bottom: 1rem;
+    }
   }
 }
 .form_file_note {
@@ -327,7 +336,7 @@ textarea{
 
 .preview {
   .preview_img {
-    max-width: 80%;
+    max-width: 300px;
     margin-top: 1rem;
     @include sp {
       max-width: 100%;
@@ -340,6 +349,7 @@ textarea{
 .check_group {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
   @include sp {
     flex-direction: column;
     gap: 1rem;
@@ -396,6 +406,7 @@ textarea{
         box-sizing: border-box;
         align-items: center;
         justify-content: center;
+        filter: drop-shadow(0 0 0.5rem #fff);
       }
       &::after {
         width: 100%;
@@ -411,16 +422,17 @@ textarea{
         content: none;
       }
       &.active {
-        color: #ff740f;
+        color: #ff00d6;
       }
       &.active:before {
-        border-color: #ff740f;
-        background: #ff740f;
+        border-color: #ff00d6;
+        background: #ff00d6;
         color: #fff;
+        filter: drop-shadow(0 0 1rem #ff00d6);
       }
 
       &.active + li:after {
-        background-color: #ff740f;
+        background-color: #ff00d6;
       }
 
       .contact-section .contact-form .progressbar {
@@ -436,7 +448,7 @@ textarea{
   }
 }
 
-#form-sending  {
+#form-sending {
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
   position: fixed;
@@ -450,7 +462,136 @@ textarea{
   justify-content: center;
   font-size: 5rem;
   color: #fff;
-  @include sp{
+  @include sp {
     font-size: 3rem;
+  }
+}
+
+.contactform-item-data_in {
+  border: 1px solid rgb(133, 133, 133);
+  border: 1px solid;
+  border-image: linear-gradient(90deg, #ff00be 0%, #ff00be 29%, #3aa1ff 72%, #3fead7 100%) 2;
+  padding: 1rem;
+}
+
+.formFile__wrapper {
+  padding: 0;
+}
+.formFile__wrapper .formFile__item {
+  display: block;
+}
+.formFile__wrapper .formFile__item + .formFile__item {
+  margin-top: 1rem;
+}
+.formFile__wrapper .formFile__item .formFile__item__label {
+  font-size: 1.4rem;
+}
+
+@include pc {
+  .formFile__wrapper .formFile__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .formFile__wrapper .formFile__item .formFile__item__label {
+    width: calc(100% - 39rem);
+  }
+  .formFile__wrapper .formFile__item .formFile__item__input {
+    width: 39rem;
+  }
+  .formFile__wrapper .formFile__item .formTextNote {
+    width: 100%;
+  }
+  .formFile__wrapper .formFile__item2 .formFile__item__label {
+    width: calc(100% - 49rem);
+  }
+  .formFile__wrapper .formFile__item2 .formFile__item__input2 {
+    width: 49rem;
+  }
+  .formFile__wrapper .formFile__item2 .formFile__item__input2 .item-i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .formFile__wrapper .formFile__item2 .formFile__item__input2 .item-i .item-il {
+    width: calc(100% - 39rem);
+    font-size: 1.4rem;
+  }
+  .formFile__wrapper .formFile__item2 .formFile__item__input2 .item-i .formFile__item__input {
+    width: 39rem;
+  }
+  .formFile__wrapper .formFile__item2 .formFile__item__input2 .item-i + .item-i {
+    margin-top: 1rem;
+  }
+}
+@include sp {
+  .formFile__wrapper .formFile__item {
+    flex-direction: column;
+  }
+  .formFile__wrapper .formFile__item .formFile__item__label {
+    margin-bottom: 0.5rem;
+  }
+  .formFile__wrapper .formFile__item .item-i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .formFile__wrapper .formFile__item .item-i + .item-i {
+    margin-top: 1rem;
+  }
+  .formFile__wrapper .formFile__item .item-i .item-il {
+    width: 9rem;
+    font-size: 1.4rem;
+  }
+  .formFile__wrapper .formFile__item .item-i .formFile__item__input {
+    width: calc(100% - 9rem);
+  }
+}
+.formTextNote {
+  color: #777777;
+  padding: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 10px 0 0;
+}
+.color-r {
+  color: #e72424;
+}
+.contactform-input-file {
+  font-weight: 500;
+  background: #000;
+  padding: 13px 20px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+}
+.h2-title {
+  text-align: center;
+}
+.formFile__wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.file_wrap {
+  display: flex;
+  flex-direction: column;
+  .file_label {
+    padding: 1rem 0;
   }
 }

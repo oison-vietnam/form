@@ -1,0 +1,119 @@
+#section5 {
+  background-image: url(../images/section5_bg.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  z-index: +2;
+  margin-top: -25rem;
+  padding-top: 20rem;
+  padding-bottom: 30rem;
+  @include sp {
+    padding-bottom: 10rem;
+  }
+}
+.voices {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  @include sp {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .voice {
+    max-width: 94rem;
+    position: relative;
+    @include pc {
+      &:nth-child(2) {
+        margin-left: auto;
+        .info {
+          order: 2;
+        }
+      }
+    }
+    &::before,
+    &::after {
+      content: "";
+      width: 0.3rem;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      filter: drop-shadow(0 0.4rem 1rem #fd0098);
+      background-image: linear-gradient(to bottom, #ff00be 0%, #e7fb00 100%);
+    }
+    &::before {
+      left: 0;
+    }
+    &::after {
+      right: 0;
+    }
+    .voice_inn {
+      display: flex;
+      gap: var(--gap);
+      align-items: center;
+      @include sp {
+        flex-direction: column;
+        --width-info: 22.4rem;
+        --gap: 4rem;
+        padding: 3rem 2rem;
+      }
+      @include pc {
+        --width-info: 22.4rem;
+        --gap: 4rem;
+        padding: 5.5rem 6.5rem;
+      }
+      &::before,
+      &::after {
+        content: "";
+        height: 0.3rem;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        filter: drop-shadow(0 0.4rem 1rem #fd0098);
+      }
+      &::before {
+        top: 0;
+        background-image: linear-gradient(to right, #fd0098 0%, #e7fb00 42%, #fd0098 98%);
+      }
+      &::after {
+        bottom: 0;
+        background-image: linear-gradient(to right, #e7fb00 0%, #ff00be 64%, #e7fb00 100%);
+      }
+      .info {
+        width: var(--width-info);
+        .name {
+          font-size: 2rem;
+          background-image: url(../images/voice_arrow.svg);
+          background-position: left bottom;
+          background-repeat: no-repeat;
+          padding-bottom: 2em;
+          text-align: center;
+        }
+        .avatar {
+          img {
+            display: block;
+          }
+        }
+      }
+      .detail {
+        @include sp {
+          width: 100%;
+        }
+        @include pc {
+          font-size: 2rem;
+          width: calc(100% - var(--width-info) - var(--gap));
+        }
+        p {
+          width: fit-content;
+          span {
+            border-bottom: 0.1rem solid #2b0c85;
+            line-height: 2.4;
+            padding-bottom: 0.5em;
+          }
+        }
+      }
+    }
+  }
+}

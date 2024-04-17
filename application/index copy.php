@@ -16,13 +16,13 @@
     "itemListElement": [{
         "@type": "ListItem",
         "position": 1,
-        "name": "【SITE_NAME】",
+        "name": "<?php site_name(); ?>",
         "item": "<?php lp_home_url(); ?>"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "お申し込み",
+        "name": "お申し込みフォーム",
         "item": "<?php current_url(); ?>"
       }
     ]
@@ -30,15 +30,26 @@
 </script>
 <?php endsection(); ?>
 <?php section('content'); ?>
-<main>
+<main id="page_content">
   <section class="section">
     <div class="container">
-      <h1 class="section_title section_title_img">
-        買取査定お申し込み
-      </h1>
+      <div class="section_title inview">
+        <h1 class="section_title_txt">
+          <span class="title_bg">
+            <span class="number">Application</span>
+          </span>
+          <span class="txt">
+            <span class="title_bg">
+              <span>お申し込みフォーム</span>
+            </span>
+          </span>
+        </h1>
+      </div>
       <form action="./send.php" method="POST" id="applyForm" enctype="multipart/form-data">
-       
+
         <div class="tab step2">
+          <?php require_once __DIR__ . "/step_input.php"; ?>
+          <?php require_once __DIR__ . "/step_confirm.php"; ?>
           <div class="progressbar-wrap">
             <ul class="progressbar">
               <li class="active">個人情報入力</li>
@@ -47,6 +58,7 @@
               <li>送信完了</li>
             </ul>
           </div>
+
           <h2 class="form_title">個人情報入力</h2>
           <dl>
             <dt class="require"><label for="fullname">お名前</label>
@@ -194,30 +206,32 @@
               <div class="agreement-area-inner">
                 <div class="item-agreement">
                   <div class="text-area">
-                    <p class="ttl-top">個人情報の取扱いについて</p>
+                    <p class="ttl-top">
+                      <span class="txt_grd">個人情報の取扱いについて</span>
+                    </p>
 
-                    <p class="ttl"> ■ 利用目的</p>
+                    <p class="ttl"><span class="txt_grd">■ 利用目的</span></p>
                     <p>この無料査定お申込みフォームでご提出いただく個人情報は、無料査定のお申込みまたはお問合せ事項に適切に対応し管理するために利用します。</p>
 
-                    <p class="ttl"> ■ 第三者提供</p>
+                    <p class="ttl"><span class="txt_grd">■ 第三者提供</span></p>
                     <p>法令に基づく場合を除いて、ご本人様の同意なく当個人情報を第三者に提供することはありません。</p>
 
-                    <p class="ttl">■ 委託</p>
+                    <p class="ttl"><span class="txt_grd">■ 委託</p>
                     <p>当個人情報の取扱いを委託することがありますが、委託にあたっては、委託先における個人情報の安全管理が図られるよう、委託先に対する必要かつ適切な監督を行います。
                     </p>
 
-                    <p class="ttl"> ■ 開示等のお求め</p>
+                    <p class="ttl"><span class="txt_grd">■ 開示等のお求め</span></p>
                     <p>
                       当個人情報の利用目的の通知、開示、内容の訂正・追加または削除、利用の停止・消去および第三者への提供の停止（「開示等」といいます。）を受け付けております。開示等の求めは、以下の「個人情報苦情及び相談窓口」で受け付けます。
                     </p>
 
-                    <p class="ttl"> ■ 個人情報をご入力するにあたっての注意事項</p>
+                    <p class="ttl"><span class="txt_grd">■ 個人情報をご入力するにあたっての注意事項</span></p>
                     <p>必要事項が記載されていない場合、最適なご回答ができない場合があります。</p>
 
-                    <p class="ttl">■ 個人情報保護管理者</p>
+                    <p class="ttl"><span class="txt_grd">■ 個人情報保護管理者</p>
                     <p>買取デポ</p>
 
-                    <p class="ttl">■ 個人情報苦情及び相談窓口</p>
+                    <p class="ttl"><span class="txt_grd">■ 個人情報苦情及び相談窓口</p>
                     <p>
                       会社名：株式会社ステップ<br>
                       所在地：〒 192-0084 東京都八王子市三崎町4-11 トーネンビル５F<br>

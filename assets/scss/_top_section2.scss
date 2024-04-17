@@ -4,15 +4,20 @@
   z-index: +2;
   padding-top: 10rem;
   padding-bottom: 18rem;
+  @include sp {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% + 12rem);
     background-image: url(../images/section2_bg.webp);
     background-position: center bottom;
+    background-repeat: no-repeat;
+    height: calc(100% + 12rem);
   }
   .section_content {
     position: relative;
@@ -24,24 +29,45 @@
     margin-right: auto;
     display: flex;
     justify-content: center;
-    gap: 5rem;
     flex-wrap: wrap;
+    @include sp {
+      flex-direction: column;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      gap: 2rem;
+    }
+    @include pc {
+      gap: 5rem;
+    }
     .item {
       font-size: 1.6rem;
-      width: 48rem;
       position: relative;
+      @include pc {
+        width: 48rem;
+      }
       .item_detail {
-        position: absolute;
-        top: 0;
-        left: 0;
         letter-spacing: initial;
-        padding-top: 2.7rem;
-        padding-left: 16rem;
-        padding-bottom: 6rem;
-        padding-right: 3rem;
         font-size: 1.6rem;
+        @include sp {
+          width: 100%;
+          padding: 2rem 2rem;
+          border: 0.2rem solid;
+          border-image: linear-gradient(45deg, #ff00be 0%, #ca58ff 33%, #3aa1ff 67%, #3fead7 100%) 1;
+        }
+        @include pc {
+          top: 0;
+          left: 0;
+          position: absolute;
+          padding-top: 2.7rem;
+          padding-left: 16rem;
+          padding-bottom: 6rem;
+          padding-right: 3rem;
+        }
       }
       .item_bg {
+        @include sp {
+          display: none;
+        }
         img {
           width: 100%;
         }

@@ -8,7 +8,7 @@ if (!defined('CORE')) {
   exit;
 }
 ?>
-<a class="button" href="#">
+<a class="button" href="<?php lp_home_url('application'); ?>">
   <span class="button_wrap">
     <span>
       お申し込みは数分で可能！<br>

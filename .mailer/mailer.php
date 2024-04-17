@@ -24,9 +24,9 @@ function send_email($subject, $body, $to, $reply = null, $bcc = null, $photos = 
   global  $from_email;
   global  $from_name;
 
-  $jp_subject = "=?iso-2022-jp?B?".base64_encode(mb_convert_encoding($subject,"ISO-2022-JP", "AUTO"))."?=";
-  $jp_from_name = "=?iso-2022-jp?B?".base64_encode(mb_convert_encoding($from_name,"ISO-2022-JP", "AUTO"))."?=";
-/* 
+  $jp_subject = "=?iso-2022-jp?B?" . base64_encode(mb_convert_encoding($subject, "ISO-2022-JP", "AUTO")) . "?=";
+  $jp_from_name = "=?iso-2022-jp?B?" . base64_encode(mb_convert_encoding($from_name, "ISO-2022-JP", "AUTO")) . "?=";
+  /* 
   $jp_subject = mb_convert_encoding($subject, "ISO-2022-JP", "AUTO");
   $jp_subject = mb_encode_mimeheader($jp_subject);
  */
@@ -150,7 +150,7 @@ function get_message_customer($msg_folder = __DIR__)
 function email_success()
 {
 ?>
-  <form id="redirectThanks" action="../../thanks/" method="POST">
+  <form id="redirectThanks" action="../thanks/" method="POST">
     <input type="hidden" name="token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9">
   </form>
   <script type="text/javascript">

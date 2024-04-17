@@ -1,8 +1,182 @@
 #section4 {
+  background-color: #eb03ff;
   background-image: url(../images/section4_bg.webp);
-  background-position: center bottom;
+  background-position: center top;
+  background-repeat: no-repeat;
   position: relative;
-  z-index: +2;
-  padding-top: 10rem;
+  z-index: 0;
+  margin-top: -25rem;
+  padding-top: 25rem;
   padding-bottom: 30rem;
+  @include sp {
+    margin-top: -12rem;
+    padding-top: 15rem;
+    background-size: cover;
+  }
+  .section_title {
+    margin-bottom: 10rem;
+  }
+}
+.progress_wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 15rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.progress_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+  > span {
+    display: flex;
+    background-image: url(../images/progress_title.svg);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @include sp {
+      width: 22rem;
+      height: 4.8rem;
+      font-size: 1.6rem;
+      background-size: contain;
+    }
+    @include pc {
+      width: 46rem;
+      height: 10rem;
+      font-size: 3.5rem;
+    }
+  }
+  &::after {
+    content: "";
+    height: 0.3rem;
+    width: calc(100% - 46rem);
+    background-color: #eb03ff;
+    background-image: linear-gradient(to right, #ff00be 0%, #ca58ff 30%, #3aa1ff 70%, #3fead7 100%);
+    background-image: linear-gradient(to right, #ff00be 0%, #ca58ff 15%, #3aa1ff 35%, #3fead7 45%, #ff00be 55%, #ca58ff 65%, #3aa1ff 75%, #3fead7 100%);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+    @include sp {
+      width: calc(100% - 22rem);
+    }
+  }
+}
+.progress_group {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  .progress {
+    --step-color: #ccff00;
+    display: flex;
+    background-color: #0000004f;
+    max-width: 850px;
+    border: 0.3rem solid #ff00e5;
+    position: relative;
+    @include sp {
+      flex-direction: column;
+    }
+    @include pc {
+      gap: 2.5rem;
+      padding-right: 4.5rem;
+      align-items: center;
+    }
+    &:nth-child(2) {
+      --step-color: #ffff00;
+    }
+    &:nth-child(3) {
+      --step-color: #ffcc00;
+    }
+    &:nth-child(4) {
+      --step-color: #ff9900;
+    }
+    @include pc {
+      &_left1 {
+        margin-left: 9%;
+      }
+      &_left2 {
+        margin-left: 18%;
+      }
+      &_left3 {
+        margin-left: 27%;
+      }
+    }
+    &:not(:last-child)::after {
+      content: "";
+      width: 4rem;
+      height: 4rem;
+      background-image: url(../images/progress_arrow.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+      position: absolute;
+      bottom: -7rem;
+      @include sp {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @include pc {
+        left: 20rem;
+      }
+    }
+    .step {
+      background-color: var(--step-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000000;
+      font-size: 2.2rem;
+      text-align: center;
+      position: relative;
+      @include sp {
+        padding: 2rem 3rem;
+      }
+      @include pc {
+        width: 17rem;
+        min-height: 10rem;
+        margin-right: 3rem;
+      }
+      svg {
+        transform: translateX(100%);
+        position: absolute;
+        right: 0;
+        fill: var(--step-color);
+        @include sp {
+          display: none;
+        }
+      }
+    }
+    .txt {
+      @include sp {
+        order: 3;
+        padding: 2rem;
+      }
+      @include pc {
+        width: calc(100% - 26rem);
+      }
+    }
+    .icon {
+      @include sp {
+        padding-top: 2rem;
+        img {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+      @include pc {
+        width: 5rem;
+      }
+    }
+  }
+}
+.progress_wrap_2 {
+  margin-bottom: 0;
+  @include pc {
+    .progress_group {
+      .progress {
+        &:not(:last-child)::after {
+          left: 0;
+        }
+      }
+    }
+  }
 }
