@@ -48,12 +48,12 @@ a {
 }
 @media screen and (max-width: 767px) {
   #site_header {
-    padding: 2rem 1rem 3.5rem;
+    padding: 2rem 1rem 3.5rem 1rem;
   }
 }
 @media screen and (min-width: 768px) {
   #site_header {
-    padding: 2rem 1rem 9.5rem;
+    padding: 2rem 1rem 9.5rem 3rem;
   }
 }
 
