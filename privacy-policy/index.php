@@ -3,10 +3,10 @@ global $robots;
 $robots = 'noindex';
 require_once __DIR__ . "/../functions.php"; ?>
 <?php section('head'); ?>
-<title>プライバシーポリシー｜ARUTEMISU -アルテミス-</title>
-<meta name="description" content="ARUTEMISU（アルテミス）のプライバシーポリシーについてご紹介いたします。">
-<meta property="og:title" content="プライバシーポリシー｜ARUTEMISU -アルテミス-">
-<meta property="og:description" content="ARUTEMISU（アルテミス）のプライバシーポリシーについてご紹介いたします。">
+<title>プライバシーポリシー｜ARTEMIS -アルテミス-</title>
+<meta name="description" content="ARTEMIS（アルテミス）のプライバシーポリシーについてご紹介いたします。">
+<meta property="og:title" content="プライバシーポリシー｜ARTEMIS -アルテミス-">
+<meta property="og:description" content="ARTEMIS（アルテミス）のプライバシーポリシーについてご紹介いたします。">
 
 <?php endsection(); ?>
 <?php section('stylesheet'); ?>
@@ -43,8 +43,8 @@ if (file_exists(__DIR__ . "/tracking_body.php")) require_once __DIR__ . "/tracki
 
 <main id="page_content">
   <section class="section">
-    <div class="breadcrumbs" bis_skin_checked="1">
-      <div class="breadcrumb" bis_skin_checked="1">
+    <div class="breadcrumbs">
+      <div class="breadcrumb">
         <span><a href="<?php lp_home_url(); ?>">
             <img src="<?php asset('images/icon-home.svg'); ?>" alt="<?php site_name(); ?>" width="50" height="50">
           </a></span>
@@ -67,7 +67,7 @@ if (file_exists(__DIR__ . "/tracking_body.php")) require_once __DIR__ . "/tracki
       </div>
       <div class="privacy-content">
 
-        <p>ARUTEMISU アルテミス（以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における，ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。</p>
+        <p>ARTEMIS アルテミス（以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における，ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。</p>
         <h3 class="wp-block-heading">■ 第1条（個人情報）</h3>
         <p>「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。</p>
         <h3 class="wp-block-heading">■ 第2条（個人情報の収集方法）</h3>
@@ -121,7 +121,7 @@ if (file_exists(__DIR__ . "/tracking_body.php")) require_once __DIR__ . "/tracki
         <h3 class="wp-block-heading">■ 第10条（お問い合わせ窓口）</h3>
         <p>本ポリシーに関するお問い合わせは，下記の窓口までお願いいたします。</p>
         <p>
-          サイト名：ARUTEMISU（アルテミス）<br>
+          サイト名：ARTEMIS（アルテミス）<br>
           電話番号：<a class="txt_grd" href="tel:+000-0000-0000">000-0000-0000</a><br>
           営業時間：9時～19時<br>
           定休日：年中無休<br>

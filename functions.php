@@ -37,6 +37,9 @@ function get_lp_home_url($path = "")
 {
   $lp = get_config('lp');
   $domain = get_domain();
+  if (str_contains($_SERVER['REQUEST_URI'], FOLDER_TEST)) {
+    $domain .= "/" . FOLDER_TEST;
+  }
   $domain .= "/" . ($lp ?  $lp . "/" : "");
   $path =  $path ? $path . "/" : "";
   return $domain . $path;
@@ -50,9 +53,6 @@ function get_domain()
   $protocol = get_protocol();
   $server_name = $_SERVER['SERVER_NAME'];
 
-  if (str_contains($_SERVER['REQUEST_URI'], FOLDER_TEST)) {
-    $server_name .= "/" . FOLDER_TEST;
-  }
   return $protocol . $server_name;
 }
 function get_protocol()

@@ -3,10 +3,10 @@ global $robots;
 $robots = 'noindex';
 require_once __DIR__ . "/../functions.php"; ?>
 <?php section('head'); ?>
-<title>送信完了｜ARUTEMISU -アルテミス-</title>
-<meta name="description" content="ARUTEMISU（アルテミス）へのお申し込みが正常に受け付けられました。お申し込みいただき、誠にありがとうございました。">
-<meta property="og:title" content="送信完了｜ARUTEMISU -アルテミス-">
-<meta property="og:description" content="ARUTEMISU（アルテミス）へのお申し込みが正常に受け付けられました。お申し込みいただき、誠にありがとうございました。">
+<title>送信完了｜ARTEMIS -アルテミス-</title>
+<meta name="description" content="ARTEMIS（アルテミス）へのお申し込みが正常に受け付けられました。お申し込みいただき、誠にありがとうございました。">
+<meta property="og:title" content="送信完了｜ARTEMIS -アルテミス-">
+<meta property="og:description" content="ARTEMIS（アルテミス）へのお申し込みが正常に受け付けられました。お申し込みいただき、誠にありがとうございました。">
 
 <?php
 //Nếu có tracking trong head thì tạo file tracking_head.php trong thư mục thanks trên hosting
@@ -47,8 +47,8 @@ if (file_exists(__DIR__ . "/tracking_body.php")) require_once __DIR__ . "/tracki
 
 <main id="page_content">
   <section class="section">
-    <div class="breadcrumbs" bis_skin_checked="1">
-      <div class="breadcrumb" bis_skin_checked="1">
+    <div class="breadcrumbs">
+      <div class="breadcrumb">
         <span><a href="<?php lp_home_url(); ?>">
             <img src="<?php asset('images/icon-home.svg'); ?>" alt="<?php site_name(); ?>" width="50" height="50">
           </a></span>

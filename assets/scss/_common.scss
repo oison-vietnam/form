@@ -94,7 +94,7 @@ body {
     padding: 1.5rem 3rem 1.5rem 5.5rem;
     background-image: linear-gradient(to right, #29eedb 0%, #29eedb 20%, #ecec32 80%, #ecec32 100%);
     @include sp {
-      padding: 1rem 1.5rem 1rem 3rem;
+      padding: 1rem 1.5rem 1rem 2rem;
     }
     span {
       font-size: 2rem;
@@ -210,46 +210,6 @@ body {
     transform: rotate(1turn);
   }
 }
-#back_to_top {
-  display: none;
-  position: fixed;
-  z-index: +99;
-  padding: 0.3rem;
-  overflow: hidden;
-  @include sp {
-    right: 1rem;
-    bottom: 3rem;
-    width: 4rem;
-    height: 4rem;
-  }
-  @include pc {
-    right: 3rem;
-    bottom: 3rem;
-    width: 6rem;
-    height: 6rem;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: -25%;
-    top: -25%;
-    width: 150%;
-    height: 150%;
-    background-image: linear-gradient(45deg, #ff00be 0%, #ca58ff 30%, #3aa1ff 60%, #3fead7 90%, #3fead7 100%);
-
-    animation: rotate 4s linear infinite;
-  }
-  .inn {
-    display: block;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #050314;
-  }
-}
 #page_content {
   padding-top: 15rem;
   padding-bottom: 15rem;
@@ -356,7 +316,7 @@ body {
 }
 #button_fixed {
   position: fixed;
-  z-index: 999;
+  z-index: 97;
   display: none;
   @include sp {
     bottom: 1.5rem;
@@ -374,7 +334,7 @@ body {
   }
   .button_wrap {
     @include sp {
-      padding: 1rem 2rem;
+      padding: 0.25rem 1.5rem;
       span {
         font-size: 1.4rem;
       }
@@ -407,39 +367,49 @@ body {
       }
     }
   }
+}
+
+#back_to_top {
+  display: none;
+  position: fixed;
+  z-index: +97;
+  padding: 0.3rem;
+  overflow: hidden;
+  @include sp {
+    right: 1rem;
+    bottom: 1.5rem;
+    width: 6rem;
+    height: 6.5rem;
+    border-radius: 1rem;
+  }
   @include pc {
-    .btn_line {
-      font-size: 1.4rem;
-      &::before {
-        width: 6rem;
-        height: 6rem;
-        left: 50%;
-        top: 0;
-        transform: translate(-50%, -50%);
-      }
-      &::after {
-        top: auto;
-        bottom: 0;
-        width: 100%;
-        height: 6rem;
-        background-size: 3rem;
-      }
-      .shine {
-        padding: 4rem 1.5rem 6rem 1.5rem;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        text-align: center;
-        > span,
-        > b {
-          letter-spacing: 0.15em;
-        }
-        &::after {
-          left: 0;
-          top: -75%;
-          transform: skewX(330deg);
-          animation-name: shine_top_to_bot;
-        }
-      }
+    right: 3rem;
+    bottom: 3rem;
+    width: 6rem;
+    height: 6rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -25%;
+    top: -25%;
+    width: 150%;
+    height: 150%;
+    background-image: linear-gradient(45deg, #ff00be 0%, #ca58ff 30%, #3aa1ff 60%, #3fead7 90%, #3fead7 100%);
+
+    animation: rotate 4s linear infinite;
+  }
+  .inn {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #050314;
+    @include sp {
+      border-radius: 0.8rem;
     }
   }
 }

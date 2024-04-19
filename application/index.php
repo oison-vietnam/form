@@ -1,9 +1,9 @@
 <?php require_once __DIR__ . "/../functions.php"; ?>
 <?php section('head'); ?>
-<title>買取査定お申し込み｜ARUTEMISU -アルテミス-</title>
-<meta name="description" content="ARUTEMISU（アルテミス）の買取査定お申し込みのフォームページになります。お申し込み希望の方は必要事項を入力し、送信ボタンをクリックしてください。">
-<meta property="og:title" content="買取査定お申し込み｜ARUTEMISU -アルテミス-">
-<meta property="og:description" content="ARUTEMISU（アルテミス）の買取査定お申し込みのフォームページになります。お申し込み希望の方は必要事項を入力し、送信ボタンをクリックしてください。">
+<title>買取査定お申し込み｜ARTEMIS -アルテミス-</title>
+<meta name="description" content="ARTEMIS（アルテミス）の買取査定お申し込みのフォームページになります。お申し込み希望の方は必要事項を入力し、送信ボタンをクリックしてください。">
+<meta property="og:title" content="買取査定お申し込み｜ARTEMIS -アルテミス-">
+<meta property="og:description" content="ARTEMIS（アルテミス）の買取査定お申し込みのフォームページになります。お申し込み希望の方は必要事項を入力し、送信ボタンをクリックしてください。">
 <?php endsection(); ?>
 <?php section('stylesheet'); ?>
 <link rel="stylesheet" href="<?php asset('css/form.css', true) ?>">
@@ -32,8 +32,8 @@
 <?php section('content'); ?>
 <main id="page_content">
   <section class="section">
-    <div class="breadcrumbs" bis_skin_checked="1">
-      <div class="breadcrumb" bis_skin_checked="1">
+    <div class="breadcrumbs">
+      <div class="breadcrumb">
         <span><a href="<?php lp_home_url(); ?>">
             <img src="<?php asset('images/icon-home.svg'); ?>" alt="<?php site_name(); ?>" width="50" height="50">
           </a></span>

@@ -2,9 +2,9 @@
 global $robots;
 $robots = 'noindex';
 require_once(__DIR__ . "/../functions.php"); ?>
-<?php section('head'); ?><title>404 NOT FOUND｜ARUTEMISU -アルテミス-</title>
+<?php section('head'); ?><title>404 NOT FOUND｜ARTEMIS -アルテミス-</title>
 <meta name="description" content="お探しのページが見つかりませんでした。お客様がアクセスしようとしたページは存在しないか、移動または削除された可能性があります">
-<meta property="og:title" content="404 NOT FOUND｜ARUTEMISU -アルテミス-">
+<meta property="og:title" content="404 NOT FOUND｜ARTEMIS -アルテミス-">
 <meta property="og:description" content="お探しのページが見つかりませんでした。お客様がアクセスしようとしたページは存在しないか、移動または削除された可能性があります">
 <?php endsection(); ?>
 <?php section('after_head'); ?>
@@ -38,8 +38,8 @@ require_once(__DIR__ . "/../functions.php"); ?>
 <main id="page_content">
   <div class="section privacy_section">
 
-    <div class="breadcrumbs" bis_skin_checked="1">
-      <div class="breadcrumb" bis_skin_checked="1">
+    <div class="breadcrumbs">
+      <div class="breadcrumb">
         <span><a href="<?php lp_home_url(); ?>">
             <img src="<?php asset('images/icon-home.svg'); ?>" alt="<?php site_name(); ?>" width="50" height="50">
           </a></span>

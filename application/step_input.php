@@ -11,7 +11,7 @@
   </h2>
   <dl>
     <dt class="require ">
-      <label for="purchase_method">買取方法を選択</label>
+      <label>買取方法を選択</label>
     </dt>
     <dd>
       <div class="form_group">
@@ -40,7 +40,7 @@
 
   <dl>
     <dt class="require">
-      <label for="file">必要書類の添付</label>
+      <label>必要書類の添付</label>
     </dt>
     <dd>
       <div class="contactform-item-data_in">
@@ -87,7 +87,7 @@
     </dt>
     <dd>
       <div class="form_group">
-        <input type="text" name="fullname" id="fullname" class="contactform-input-text" placeholder="（例）買取太郎" required="" aria-invalid="true">
+        <input type="text" name="fullname" id="fullname" class="contactform-input-text" placeholder="※お名前を入力" required="" aria-invalid="true">
       </div>
     </dd>
   </dl>
@@ -98,7 +98,7 @@
     </dt>
     <dd>
       <div class="form_group">
-        <input type="text" name="furigana" id="furigana" class="contactform-input-text" placeholder="（例）カイトリタロウ" required="">
+        <input type="text" name="furigana" id="furigana" class="contactform-input-text" placeholder="※お名前のフリガナを入力" required="">
       </div>
     </dd>
   </dl>
@@ -109,14 +109,14 @@
     </dt>
     <dd>
       <div class="form_group">
-        <input type="text" name="address" id="address" class="contactform-input-text" placeholder="（例）東京都八王子市三崎町4-11" required="" aria-invalid="true">
+        <input type="text" name="address" id="address" class="contactform-input-text" placeholder="※ご住所を入力" required="" aria-invalid="true">
       </div>
     </dd>
   </dl>
 
   <dl>
     <dt class="require">
-      <label for="name">生年月日</label>
+      <label for="year">生年月日</label>
     </dt>
     <dd>
       <div class="form_group">
@@ -138,7 +138,7 @@
     </dt>
     <dd>
       <div class="form_group">
-        <input type="tel" name="phone" id="phone" class="contactform-input-text fix-byte fix-num" maxlength="11" pattern="\d{10,11}" title="ハイフンなしの10桁から11桁の電話番号を半角数字で入力してください。" placeholder="（例）0123456789　数字のみご入力" required="">
+        <input type="tel" name="phone" id="phone" class="contactform-input-text fix-byte fix-num" maxlength="11" pattern="\d{10,11}" title="ハイフンなしの10桁から11桁の電話番号を半角数字で入力してください。" placeholder="※電話番号を数字で入力" required="">
       </div>
     </dd>
   </dl>
@@ -148,7 +148,7 @@
     </dt>
     <dd>
       <div class="form_group">
-        <input type="email" name="email" id="email" class="contactform-input-text" placeholder="（例）〇〇〇＠gmail.com" required="">
+        <input type="email" name="email" id="email" class="contactform-input-text" placeholder="※メ－ルアドレスを入力" required="">
       </div>
     </dd>
   </dl>
@@ -159,7 +159,7 @@
     </dt>
     <dd>
       <div class="form_group">
-        <input type="email" name="email_confirm" id="email_confirm" class="contactform-input-text" placeholder="※入力したメールアドレスを再度ご入力" required="">
+        <input type="email" name="email_confirm" id="email_confirm" class="contactform-input-text" placeholder="※メ－ルアドレスを再度入力" required="">
       </div>
     </dd>
   </dl>
@@ -169,7 +169,7 @@
     </dt>
     <dd>
       <div class="form_group">
-        <input type="text" name="company_name" id="company_name" class="contactform-input-text" placeholder="（例）株式会社ステップ" required="" aria-invalid="true">
+        <input type="text" name="company_name" id="company_name" class="contactform-input-text" placeholder="※勤務先の会社名を入力" required="" aria-invalid="true">
       </div>
     </dd>
   </dl>
@@ -180,7 +180,7 @@
     </dt>
     <dd>
       <div class="form_group">
-        <input type="text" name="company_address" id="company_address" class="contactform-input-text" placeholder="（例）東京都八王子市三崎町4-11" required="" aria-invalid="true">
+        <input type="text" name="company_address" id="company_address" class="contactform-input-text" placeholder="※勤務先の住所を入力" required="" aria-invalid="true">
       </div>
     </dd>
 
@@ -192,7 +192,7 @@
     </dt>
     <dd>
       <div class="form_group">
-        <input type="tel" name="contact_info" id="contact_info" class="contactform-input-text fix-byte fix-num" maxlength="11" pattern="\d{10,11}" title="ハイフンなしの10桁から11桁の電話番号を半角数字で入力してください。" placeholder="（例）0123456789　数字のみご入力" required="">
+        <input type="tel" name="contact_info" id="contact_info" class="contactform-input-text fix-byte fix-num" maxlength="11" pattern="\d{10,11}" title="ハイフンなしの10桁から11桁の電話番号を半角数字で入力してください。" placeholder="※電話番号を数字で入力" required="">
       </div>
     </dd>
   </dl>
@@ -203,7 +203,7 @@
     </dt>
     <dd>
       <div class="form_group">
-        <input type="text" name="monthly_income" id="monthly_income" class="contactform-input-text" placeholder="（例）手取り20万円" required="" aria-invalid="true">
+        <input type="text" name="monthly_income" id="monthly_income" class="contactform-input-text" placeholder="※毎月の平均月収を入力" required="" aria-invalid="true">
       </div>
     </dd>
   </dl>
@@ -214,7 +214,7 @@
     </dt>
     <dd>
       <div class="form_group">
-        <input type="text" name="payday" id="payday" class="contactform-input-text" placeholder="（例）毎月10日" required="" aria-invalid="true">
+        <input type="text" name="payday" id="payday" class="contactform-input-text" placeholder="※毎月の給与日を入力" required="" aria-invalid="true">
       </div>
     </dd>
   </dl>
@@ -239,7 +239,7 @@
           <p class="ttl"><span class="txt_grd">■ 第三者提供</span></p>
           <p>法令に基づく場合を除いて、ご本人様の同意なく当個人情報を第三者に提供することはありません。</p>
 
-          <p class="ttl"><span class="txt_grd">■ 委託</p>
+          <p class="ttl"><span class="txt_grd">■ 委託</span></p>
           <p>当個人情報の取扱いを委託することがありますが、委託にあたっては、委託先における個人情報の安全管理が図られるよう、委託先に対する必要かつ適切な監督を行います。
           </p>
 
@@ -251,12 +251,12 @@
           <p class="ttl"><span class="txt_grd">■ 個人情報をご入力するにあたっての注意事項</span></p>
           <p>必要事項が記載されていない場合、最適なご回答ができない場合があります。</p>
 
-          <p class="ttl"><span class="txt_grd">■ 個人情報保護管理者</p>
+          <p class="ttl"><span class="txt_grd">■ 個人情報保護管理者</span></p>
           <p>買取デポ</p>
 
-          <p class="ttl"><span class="txt_grd">■ 個人情報苦情及び相談窓口</p>
+          <p class="ttl"><span class="txt_grd">■ 個人情報苦情及び相談窓口</span></p>
           <p>
-            サイト名：ARUTEMISU（アルテミス）<br>
+            サイト名：ARTEMIS（アルテミス）<br>
             電話番号：<a class="txt_grd" href="tel:+000-0000-0000">000-0000-0000</a><br>
             営業時間：9時～19時<br>
             定休日：年中無休<br>

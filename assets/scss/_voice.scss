@@ -1,5 +1,6 @@
 #voice {
   background-image: url(../images/voice_bg.webp);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   position: relative;
@@ -8,7 +9,7 @@
   padding-top: 20rem;
   padding-bottom: 30rem;
   @include sp {
-    padding-bottom: 10rem;
+    padding-bottom: 20rem;
   }
 }
 .voices {

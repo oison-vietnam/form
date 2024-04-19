@@ -15,7 +15,7 @@ require_once __DIR__ . "/functions.php"; ?>
   <?php stack('head'); ?>
   <meta property="og:locale" content="ja_JP">
   <meta property="og:type" content="<?php $is_front_page ? 'website' : 'article'; ?>">
-  <meta property="og:site_name" content="【ARUTEMISU アルテミス】">
+  <meta property="og:site_name" content="【ARTEMIS アルテミス】">
   <meta property="og:image" content="<?php asset('images/og-image.png') ?>">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -36,7 +36,9 @@ require_once __DIR__ . "/functions.php"; ?>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <?php if (is_not_test_speed()) : ?>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <?php endif; ?>
   <link rel="stylesheet" href="<?php asset('css/normalize.css', true) ?>">
   <link rel="stylesheet" href="<?php asset('css/style.css', true) ?>">
   <?php stack('stylesheet'); ?>

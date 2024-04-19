@@ -17,7 +17,8 @@ $(document).ready(function () {
       $("#back_to_top, #button_fixed").fadeOut();
     }
   });
-  $(".menu_toggle").click(function () {
+  $(".menu_toggle").click(function (event) {
+    event.preventDefault();
     $(".menu_toggle, #menu").toggleClass('open');
   })
   $("#back_to_top").click(function (e) {

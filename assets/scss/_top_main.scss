@@ -200,11 +200,10 @@
       @media screen and (min-width: 1040px) and (max-width: 1399px) {
         width: 65%;
       }
-      @media screen and (min-width: 880px) and (max-width: 1039px) {
+      @media screen and (min-width: 768px) and (max-width: 1039px) {
         width: 70%;
-      }
-      @media screen and (min-width: 768px) and (max-width: 879px) {
-        width: 78%;
+        top: auto;
+        bottom: 0;
       }
     }
   }

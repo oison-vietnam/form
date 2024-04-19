@@ -1,12 +1,12 @@
 {
   "from_email": "application@iconvn.xsrv.jp",
-  "from_name": "【ARUTEMISU アルテミス】",
-  "admin_subject": "【ARUTEMISU -アルテミス-】お客様から買取査定依頼のお知らせ",
+  "from_name": "【ARTEMIS アルテミス】",
+  "admin_subject": "【ARTEMIS -アルテミス-】お客様から買取査定依頼のお知らせ",
   "admin_email": "hoangphu.nam0604@gmail.com",
   "admin_bcc": "ps1508001@gmail.com",
-  "customer_subject": "【ARUTEMISU -アルテミス-】お申し込みいただき、誠にありがとうございます。",
+  "customer_subject": "【ARTEMIS -アルテミス-】お申し込みいただき、誠にありがとうございます。",
   "customer_reply_email": "application@iconvn.xsrv.jp",
-  "site_name": "【ARUTEMISU アルテミス】",
+  "site_name": "【ARTEMIS アルテミス】",
   "line_url": "https://lin.ee/xxxx",
   "meta_robots": "noindex,nofollow",
   "lp": ""

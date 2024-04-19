@@ -42,7 +42,7 @@ if (!defined('CORE')) {
           <div class="arrow arrow_left">
             <span>②写真から査定～先払いでお振込み</span>
             <picture>
-              <source media="(max-width: 768px)" srcset="<?php asset('images/plan_arrow11_sp.svg'); ?>" />
+              <source media="(max-width: 768px)" srcset="<?php asset('images/plan_arrow11_sp.svg'); ?>">
               <img src="<?php asset('images/plan_arrow11.svg'); ?>" alt="②写真から査定～先払いでお振込み" width="390" height="50">
             </picture>
           </div>
@@ -61,7 +61,7 @@ if (!defined('CORE')) {
           </div>
           <div class="arrow">
             <picture>
-              <source media="(max-width: 768px)" srcset="<?php asset('images/plan_arrow12_sp.svg'); ?>" />
+              <source media="(max-width: 768px)" srcset="<?php asset('images/plan_arrow12_sp.svg'); ?>">
               <img src="<?php asset('images/plan_arrow12.svg'); ?>" alt="①商品を撮影後、当店へ送信③入金後、後日商品を郵送" width="390" height="50">
             </picture>
             <span>
@@ -83,7 +83,7 @@ if (!defined('CORE')) {
           <div class="arrow">
             <span>①商品を指定の住所へ郵送</span>
             <picture>
-              <source media="(max-width: 768px)" srcset="<?php asset('images/plan_arrow21_sp.svg'); ?>" />
+              <source media="(max-width: 768px)" srcset="<?php asset('images/plan_arrow21_sp.svg'); ?>">
               <img src="<?php asset('images/plan_arrow21.svg'); ?>" alt="①商品を指定の住所へ郵送" width="390" height="50">
             </picture>
 
@@ -104,7 +104,7 @@ if (!defined('CORE')) {
           <div class="arrow arrow_left">
 
             <picture>
-              <source media="(max-width: 768px)" srcset="<?php asset('images/plan_arrow22_sp.svg'); ?>" />
+              <source media="(max-width: 768px)" srcset="<?php asset('images/plan_arrow22_sp.svg'); ?>">
               <img src="<?php asset('images/plan_arrow22.svg'); ?>" alt="②商品到着後に査定～お振込み" width="390" height="50">
             </picture>
             <span>
