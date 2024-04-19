@@ -39,7 +39,7 @@ if (!defined('CORE')) {
         </p>
       </div>
       <div class="img fadeup inview">
-        <?php the_image('available_product_img1.webp', '商品券'); ?>
+        <?php the_image('available_product1.webp', '商品券'); ?>
       </div>
     </div>
     <div class="item ">
@@ -53,7 +53,7 @@ if (!defined('CORE')) {
         </p>
       </div>
       <div class="img fadeup inview">
-        <?php the_image('available_product_img2.webp', '商品券'); ?>
+        <?php the_image('available_product2.webp', '商品券'); ?>
       </div>
     </div>
   </div>
