@@ -14,6 +14,7 @@
     @include sp {
       flex-direction: column;
     }
+
     .main_content {
       order: 2;
       display: flex;
@@ -29,6 +30,9 @@
       }
       @include pc {
         margin-bottom: 20rem;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1600px) {
+        margin-left: auto;
       }
 
       &::before,
@@ -182,6 +186,25 @@
         img {
           width: 100%;
         }
+      }
+      @media screen and (min-width: 768px) and (max-width: 1600px) {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        transition: 0.1s;
+      }
+      @media screen and (min-width: 1400px) and (max-width: 1600px) {
+        width: 60%;
+      }
+
+      @media screen and (min-width: 1040px) and (max-width: 1399px) {
+        width: 65%;
+      }
+      @media screen and (min-width: 880px) and (max-width: 1039px) {
+        width: 70%;
+      }
+      @media screen and (min-width: 768px) and (max-width: 879px) {
+        width: 78%;
       }
     }
   }

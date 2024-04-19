@@ -26,8 +26,8 @@ if (!defined('CORE')) {
   <div class="section_desc fadeup inview">
     <p>当店の買取プランは</p>
     <p class="txt_yellow">
-      <span class="txt_gray">✔</span>先払い撮影プラン［写真を送って査定］<br>
-      <span class="txt_gray">✔</span>後払い郵送プラン［商品を送って査定］
+      先払い撮影プラン［写真を送って査定］<br>
+      後払い郵送プラン［商品を送って査定］
     </p>
     <p>
       の２種類がございます。<br>
