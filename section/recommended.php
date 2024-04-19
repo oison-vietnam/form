@@ -8,7 +8,7 @@ if (!defined('CORE')) {
   exit;
 }
 ?>
-<div id="section2" class="section">
+<div id="recommended" class="section">
   <div class="section_content">
     <div class="section_title inview">
       <h2 class="section_title_txt">
@@ -30,7 +30,7 @@ if (!defined('CORE')) {
           <span class="txt_yellow">当サイトのみのWeb完結</span>でOK
         </div>
         <div class="item_bg">
-          <?php the_image('section2_item_bg.webp', 'オススメのポイント'); ?>
+          <?php the_image('recommended_item_bg.webp', 'オススメのポイント'); ?>
         </div>
       </div>
       <div class="item fadeup inview">
@@ -40,7 +40,7 @@ if (!defined('CORE')) {
           <span class="txt_yellow">高額買取査定＆即日買取</span>を実現
         </div>
         <div class="item_bg">
-          <?php the_image('section2_item_bg.webp', 'オススメのポイント'); ?>
+          <?php the_image('recommended_item_bg.webp', 'オススメのポイント'); ?>
         </div>
       </div>
       <div class="item fadeup inview">
@@ -50,7 +50,7 @@ if (!defined('CORE')) {
           査定～お振込みまで<span class="txt_yellow">最短5分も可能</span>
         </div>
         <div class="item_bg">
-          <?php the_image('section2_item_bg.webp', 'オススメのポイント'); ?>
+          <?php the_image('recommended_item_bg.webp', 'オススメのポイント'); ?>
         </div>
       </div>
       <div class="item fadeup inview">
@@ -60,7 +60,7 @@ if (!defined('CORE')) {
           商品は<span class="txt_yellow">後日のタイミングで送ってもOK</span>
         </div>
         <div class="item_bg">
-          <?php the_image('section2_item_bg.webp', 'オススメのポイント'); ?>
+          <?php the_image('recommended_item_bg.webp', 'オススメのポイント'); ?>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ if (!defined('CORE')) {
   exit;
 }
 ?>
-<div id="section4">
+<div id="progress">
   <div class="section_title inview">
     <h2 class="section_title_txt">
       <span class="title_bg">

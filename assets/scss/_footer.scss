@@ -2,6 +2,9 @@
   background-color: #050314;
   padding: 7rem 2rem;
   text-align: center;
+  @include sp {
+    padding-bottom: 14rem;
+  }
   .footer_wrap {
     display: flex;
     flex-direction: column;

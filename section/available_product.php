@@ -8,7 +8,7 @@ if (!defined('CORE')) {
   exit;
 }
 ?>
-<div id="section1" class="section">
+<div id="available_product" class="section">
   <div class="section_title inview">
     <h2 class="section_title_txt">
       <span class="title_bg">
@@ -39,7 +39,7 @@ if (!defined('CORE')) {
         </p>
       </div>
       <div class="img fadeup inview">
-        <?php the_image('section1_img1.webp', '商品券'); ?>
+        <?php the_image('available_product_img1.webp', '商品券'); ?>
       </div>
     </div>
     <div class="item ">
@@ -53,7 +53,7 @@ if (!defined('CORE')) {
         </p>
       </div>
       <div class="img fadeup inview">
-        <?php the_image('section1_img2.webp', '商品券'); ?>
+        <?php the_image('available_product_img2.webp', '商品券'); ?>
       </div>
     </div>
   </div>

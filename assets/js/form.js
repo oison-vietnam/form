@@ -89,11 +89,10 @@ $(document).ready(function () {
           payday: "required",
           purchase_method: "required",
           "purchased_product[]": "required",
-          /* upfile1: {
-            required: true,
+          upfile1: {
             extension: "pdf|png|jpg|jpeg",
             filesize: 5, // here we are working with MB
-          }, */
+          },
           upfile2: {
             required: true,
             extension: "pdf|png|jpg|jpeg",
@@ -106,47 +105,45 @@ $(document).ready(function () {
           },
         },
         messages: {
-          agree: "※「同意する」がチェックされてません。",
-          fullname: "※こちらの項目を入力してください。",
-          furigana: "※こちらの項目を入力してください。",
-          address: "※こちらの項目を入力してください。",
-          year: "※こちらの項目を入力してください。",
-          month: "※こちらの項目を入力してください。",
-          day: "※こちらの項目を入力してください。",
-          phone: "※こちらの項目を入力してください。",
-          email: {
-            required: "※こちらの項目を入力してください。",
-            email: "※正しいメール形式をご入力ください。"
-          },
-          email_confirm: {
-            required: "※こちらの項目を入力してください。",
-            email: "※正しいメール形式をご入力ください。",
-            equalTo: "※メールアドレスが一致しません"
-          },
-          company_name: "※こちらの項目を入力してください。",
-          company_address: "※こちらの項目を入力してください。",
-          contact_info: "※こちらの項目を入力してください。",
-          monthly_income: "※こちらの項目を入力してください。",
-          payday: "※こちらの項目を入力してください。",
-
-          purchase_method: "※こちらの項目を選択してください。",
-          "purchased_product[]": "※こちらの項目を選択してください。",
+          purchase_method: "※買取方法が選択されていません。",
+          "purchased_product[]": "※買取商品が選択されていません。",
           upfile1: {
-            required: "※こちらが添付されておりません。",
+            required: "※セルフィーが添付されておりません。",
             extension: "※PDF/JPEG/PNG　対応",
             filesize: "※添付するファイルサイズは 5 MB 未満にする必要があります"
           },
           upfile2: {
-            required: "※こちらが添付されておりません。",
+            required: "※表面の写真が添付されておりません。",
             extension: "※PDF/JPEG/PNG　対応",
             filesize: "※添付するファイルサイズは 5 MB 未満にする必要があります"
           },
           upfile3: {
-            required: "※こちらが添付されておりません。",
+            required: "※裏面の写真が添付されておりません。",
             extension: "※PDF/JPEG/PNG　対応",
             filesize: "※添付するファイルサイズは 5 MB 未満にする必要があります"
-          }
-
+          },
+          fullname: "※お名前が入力されていません。",
+          furigana: "※フリガナが入力されていません。",
+          address: "※ご住所が入力されていません。",
+          year: "※生年月日が入力されていません。",
+          month: "※生年月日が入力されていません。",
+          day: "※生年月日が入力されていません。",
+          phone: "※電話番号が入力されていません。",
+          email: {
+            required: "※メールアドレスが入力されていません。",
+            email: "※正しいメール形式をご入力ください。"
+          },
+          email_confirm: {
+            required: "※メールアドレスが入力されていません。",
+            email: "※正しいメール形式をご入力ください。",
+            equalTo: "※メールアドレスが一致しません"
+          },
+          company_name: "※勤務先の会社名が入力されていません。",
+          company_address: "※勤務先のご住所が入力されていません。",
+          contact_info: "※勤務先の連絡先が入力されていません。",
+          monthly_income: "※手取り月収が入力されていません。",
+          payday: "※給料日が入力されていません。",
+          agree: "※「同意する」がチェックされてません。",
         },
         invalidHandler: function (form, validator) {
           var errors = validator.numberOfInvalids();

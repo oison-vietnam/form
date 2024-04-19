@@ -1,6 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Tokyo');
 define('CORE', true);
+define('FOLDER_TEST', 'arutemisu');
 function site_name()
 {
   echo get_config('site_name');
@@ -48,6 +49,10 @@ function get_domain()
 {
   $protocol = get_protocol();
   $server_name = $_SERVER['SERVER_NAME'];
+
+  if (str_contains($_SERVER['REQUEST_URI'], FOLDER_TEST)) {
+    $server_name .= "/" . FOLDER_TEST;
+  }
   return $protocol . $server_name;
 }
 function get_protocol()

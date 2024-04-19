@@ -17,6 +17,9 @@ $(document).ready(function () {
       $("#back_to_top, #button_fixed").fadeOut();
     }
   });
+  $(".menu_toggle").click(function () {
+    $(".menu_toggle, #menu").toggleClass('open');
+  })
   $("#back_to_top").click(function (e) {
     e.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, 600);

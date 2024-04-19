@@ -43,7 +43,7 @@ require_once __DIR__ . "/functions.php"; ?>
   <?php stack('after_head'); ?>
 </head>
 
-<body>
+<body class="<?php echo $is_front_page ? "top" : "page"; ?>">
   <?php stack('after_body'); ?>
   <header id="site_header">
     <div class="header_logo">
@@ -52,6 +52,42 @@ require_once __DIR__ . "/functions.php"; ?>
       </a>
     </div>
   </header>
+  <div id="header_fixed">
+    <div class="container">
+      <div class="application_btn">
+        <a class="button-neon button-neon-1" href="<?php lp_home_url('application'); ?>">買取依頼はこちら</a>
+      </div>
+      <a href="#menu" role="button" class="menu_toggle">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </a>
+    </div>
+  </div>
+  <div id="menu">
+    <div class="menu_wrap">
+      <div class="menu_logo">
+        <a href="<?php lp_home_url() ?>">
+          <img class="logo" src="<?php asset('images/logo.webp') ?>" alt="<?php site_name(); ?>" width="241" height="82">
+        </a>
+      </div>
+      <div class="application_btn">
+        <a class="button-neon button-neon-1" href="<?php lp_home_url('application'); ?>">買取依頼はこちら</a>
+      </div>
+      <div class="menu_nav">
+        <ul>
+          <li>
+            <a class="txt_grd" href="<?php lp_home_url() ?>">
+              TOP
+            </a>
+          </li>
+          <li>
+            <a class="txt_grd" href="<?php lp_home_url('privacy-policy'); ?>">プライバシーポリシー</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <?php stack('content'); ?>
   <footer id="site_footer">
     <div class="container">
@@ -67,7 +103,7 @@ require_once __DIR__ . "/functions.php"; ?>
           </li>
         </ul>
         <p class="copyright">
-          <span class="txt_grd">Copyright © 2024 アルテミス Corporation.</span>
+          <span>Copyright © 2024 アルテミス Corporation.</span>
         </p>
       </div>
     </div>

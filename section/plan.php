@@ -8,7 +8,7 @@ if (!defined('CORE')) {
   exit;
 }
 ?>
-<div id="section3">
+<div id="plan">
   <div class="section_title inview">
     <h2 class="section_title_txt">
       <span class="title_bg">
@@ -42,13 +42,13 @@ if (!defined('CORE')) {
           <div class="arrow arrow_left">
             <span>②写真から査定～先払いでお振込み</span>
             <picture>
-              <source media="(max-width: 768px)" srcset="<?php asset('images/section3_arrow11_sp.svg'); ?>" />
-              <img src="<?php asset('images/section3_arrow11.svg'); ?>" alt="②写真から査定～先払いでお振込み" width="390" height="50">
+              <source media="(max-width: 768px)" srcset="<?php asset('images/plan_arrow11_sp.svg'); ?>" />
+              <img src="<?php asset('images/plan_arrow11.svg'); ?>" alt="②写真から査定～先払いでお振込み" width="390" height="50">
             </picture>
           </div>
           <div class="group">
             <div class="img">
-              <?php the_image('section3_img11.webp', '先払い撮影プラン'); ?>
+              <?php the_image('plan_img11.webp', '先払い撮影プラン'); ?>
             </div>
             <div class="detail">
               <div class="txt_label">先払い撮影プラン</div>
@@ -56,13 +56,13 @@ if (!defined('CORE')) {
               <div class="txt">買取率</div>
             </div>
             <div class="img">
-              <?php the_image('section3_img12.webp', '先払い撮影プラン'); ?>
+              <?php the_image('plan_img12.webp', '先払い撮影プラン'); ?>
             </div>
           </div>
           <div class="arrow">
             <picture>
-              <source media="(max-width: 768px)" srcset="<?php asset('images/section3_arrow12_sp.svg'); ?>" />
-              <img src="<?php asset('images/section3_arrow12.svg'); ?>" alt="①商品を撮影後、当店へ送信③入金後、後日商品を郵送" width="390" height="50">
+              <source media="(max-width: 768px)" srcset="<?php asset('images/plan_arrow12_sp.svg'); ?>" />
+              <img src="<?php asset('images/plan_arrow12.svg'); ?>" alt="①商品を撮影後、当店へ送信③入金後、後日商品を郵送" width="390" height="50">
             </picture>
             <span>
               ①商品を撮影後、当店へ送信<br>
@@ -72,7 +72,7 @@ if (!defined('CORE')) {
         </div>
       </div>
       <div class="item_bg">
-        <img src="<?php asset('images/section3_item_bg1.svg'); ?>" alt="先払い撮影プラン" width="560" height="435">
+        <img src="<?php asset('images/plan_item_bg1.svg'); ?>" alt="先払い撮影プラン" width="560" height="435">
       </div>
     </div>
     <div class="item fadeup inview">
@@ -83,14 +83,14 @@ if (!defined('CORE')) {
           <div class="arrow">
             <span>①商品を指定の住所へ郵送</span>
             <picture>
-              <source media="(max-width: 768px)" srcset="<?php asset('images/section3_arrow21_sp.svg'); ?>" />
-              <img src="<?php asset('images/section3_arrow21.svg'); ?>" alt="①商品を指定の住所へ郵送" width="390" height="50">
+              <source media="(max-width: 768px)" srcset="<?php asset('images/plan_arrow21_sp.svg'); ?>" />
+              <img src="<?php asset('images/plan_arrow21.svg'); ?>" alt="①商品を指定の住所へ郵送" width="390" height="50">
             </picture>
 
           </div>
           <div class="group">
             <div class="img">
-              <?php the_image('section3_img21.webp', '後払い郵送プラン'); ?>
+              <?php the_image('plan_img21.webp', '後払い郵送プラン'); ?>
             </div>
             <div class="detail">
               <div class="txt_label">後払い郵送プラン</div>
@@ -98,14 +98,14 @@ if (!defined('CORE')) {
               <div class="txt">買取率</div>
             </div>
             <div class="img">
-              <?php the_image('section3_img22.webp', '後払い郵送プラン'); ?>
+              <?php the_image('plan_img22.webp', '後払い郵送プラン'); ?>
             </div>
           </div>
           <div class="arrow arrow_left">
 
             <picture>
-              <source media="(max-width: 768px)" srcset="<?php asset('images/section3_arrow22_sp.svg'); ?>" />
-              <img src="<?php asset('images/section3_arrow22.svg'); ?>" alt="②商品到着後に査定～お振込み" width="390" height="50">
+              <source media="(max-width: 768px)" srcset="<?php asset('images/plan_arrow22_sp.svg'); ?>" />
+              <img src="<?php asset('images/plan_arrow22.svg'); ?>" alt="②商品到着後に査定～お振込み" width="390" height="50">
             </picture>
             <span>
               ②商品到着後に査定～お振込み
@@ -114,7 +114,7 @@ if (!defined('CORE')) {
         </div>
       </div>
       <div class="item_bg">
-        <img src="<?php asset('images/section3_item_bg2.svg'); ?>" alt="オススメのポイント" width="560" height="435">
+        <img src="<?php asset('images/plan_item_bg2.svg'); ?>" alt="オススメのポイント" width="560" height="435">
       </div>
     </div>
   </div>

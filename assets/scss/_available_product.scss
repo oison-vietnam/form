@@ -1,5 +1,5 @@
-#section1 {
-  background-image: url(../images/section1_bg.webp);
+#available_product {
+  background-image: url(../images/available_product_bg.webp);
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
@@ -70,14 +70,14 @@
       }
 
       &:nth-child(1) {
-        background-image: url(../images/section1_bg1.webp);
+        background-image: url(../images/available_product_bg1.webp);
         @include pc {
           justify-content: flex-end;
           padding-right: 8rem;
         }
       }
       &:nth-child(2) {
-        background-image: url(../images/section1_bg2.webp);
+        background-image: url(../images/available_product_bg2.webp);
         @include pc {
           padding-left: 8rem;
         }

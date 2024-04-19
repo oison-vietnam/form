@@ -34,11 +34,11 @@ $is_front_page = true; ?>
 <?php section('content'); ?>
 <main>
   <?php require_once __DIR__ . "/section/main.php"; ?>
-  <?php require_once __DIR__ . "/section/section1.php"; ?>
-  <?php require_once __DIR__ . "/section/section2.php"; ?>
-  <?php require_once __DIR__ . "/section/section3.php"; ?>
-  <?php require_once __DIR__ . "/section/section4.php"; ?>
-  <?php require_once __DIR__ . "/section/section5.php"; ?>
+  <?php require_once __DIR__ . "/section/available_product.php"; ?>
+  <?php require_once __DIR__ . "/section/recommended.php"; ?>
+  <?php require_once __DIR__ . "/section/plan.php"; ?>
+  <?php require_once __DIR__ . "/section/progress.php"; ?>
+  <?php require_once __DIR__ . "/section/voice.php"; ?>
   <?php require_once __DIR__ . "/section/faq.php"; ?>
   </div>
 </main>

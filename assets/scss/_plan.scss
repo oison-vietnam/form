@@ -1,5 +1,5 @@
-#section3 {
-  background-image: url(../images/section3_bg.webp);
+#plan {
+  background-image: url(../images/plan_bg.webp);
   background-repeat: no-repeat;
   background-position: center top;
   position: relative;
@@ -70,6 +70,9 @@
               @include sp {
                 font-size: 1.4rem;
               }
+              @include pc {
+                padding: 0.5rem 0;
+              }
             }
             &_left {
               color: #ff9900;
@@ -77,6 +80,7 @@
                 width: calc(100% + 1rem);
                 max-width: inherit;
                 margin-left: -1rem;
+                filter: drop-shadow(0 0 0.5rem rgba(255, 153, 0, 1));
               }
             }
           }

@@ -42,7 +42,7 @@
     <dt class="require">
       <label for="file">必要書類の添付</label>
     </dt>
-    <dd class="contactform-item-data">
+    <dd>
       <div class="contactform-item-data_in">
         <ul class="formFile__wrapper">
           <li class="file_wrap">
@@ -85,10 +85,9 @@
     <dt class="require ">
       <label for="fullname">お名前</label>
     </dt>
-    <dd class="contactform-item-data">
+    <dd>
       <div class="form_group">
         <input type="text" name="fullname" id="fullname" class="contactform-input-text" placeholder="（例）買取太郎" required="" aria-invalid="true">
-        <label class="error" for="fullname"></label>
       </div>
     </dd>
   </dl>
@@ -97,9 +96,10 @@
     <dt class="require">
       <label for="furigana">フリガナ</label>
     </dt>
-    <dd class="contactform-item-data">
-      <input type="text" name="furigana" id="furigana" class="contactform-input-text" placeholder="（例）カイトリタロウ" required="">
-      <label class="error" for="furigana"></label>
+    <dd>
+      <div class="form_group">
+        <input type="text" name="furigana" id="furigana" class="contactform-input-text" placeholder="（例）カイトリタロウ" required="">
+      </div>
     </dd>
   </dl>
 
@@ -107,10 +107,10 @@
     <dt class="require">
       <label for="address">ご住所</label>
     </dt>
-    <dd class="contactform-item-data">
-      <input type="text" name="address" id="address" class="contactform-input-text" placeholder="（例）東京都八王子市三崎町4-11" required="" aria-invalid="true">
-
-      <label class="error" for="address"></label>
+    <dd>
+      <div class="form_group">
+        <input type="text" name="address" id="address" class="contactform-input-text" placeholder="（例）東京都八王子市三崎町4-11" required="" aria-invalid="true">
+      </div>
     </dd>
   </dl>
 
@@ -118,16 +118,17 @@
     <dt class="require">
       <label for="name">生年月日</label>
     </dt>
-    <dd class="contactform-item-data ">
-      <div class="date_group">
-        <input type="text" name="year" id="year" placeholder="例：1999" maxlength="4" inputmode="numeric" required="">
-        <span>年</span><br class="hide_pc">
-        <input type="text" name="month" id="month" placeholder="例：1" maxlength="2" inputmode="numeric" required="">
-        <span>月</span>
-        <input type="text" name="day" id="day" placeholder="例：1" maxlength="2" inputmode="numeric" required="">
-        <span>日</span>
+    <dd>
+      <div class="form_group">
+        <div class="date_group">
+          <input type="text" name="year" id="year" placeholder="例：1999" maxlength="4" inputmode="numeric" required="">
+          <span>年</span><br class="hide_pc">
+          <input type="text" name="month" id="month" placeholder="例：1" maxlength="2" inputmode="numeric" required="">
+          <span>月</span>
+          <input type="text" name="day" id="day" placeholder="例：1" maxlength="2" inputmode="numeric" required="">
+          <span>日</span>
+        </div>
       </div>
-      <label id="birthday-error" class="error" for="birthday"></label>
     </dd>
   </dl>
 
@@ -135,18 +136,20 @@
     <dt class="require">
       <label for="phone">電話番号</label>
     </dt>
-    <dd class="contactform-item-data">
-      <input type="tel" name="phone" id="phone" class="contactform-input-text fix-byte fix-num" maxlength="11" pattern="\d{10,11}" title="ハイフンなしの10桁から11桁の電話番号を半角数字で入力してください。" placeholder="（例）0123456789　数字のみご入力" required="">
-      <label class="error" for="phone"></label>
+    <dd>
+      <div class="form_group">
+        <input type="tel" name="phone" id="phone" class="contactform-input-text fix-byte fix-num" maxlength="11" pattern="\d{10,11}" title="ハイフンなしの10桁から11桁の電話番号を半角数字で入力してください。" placeholder="（例）0123456789　数字のみご入力" required="">
+      </div>
     </dd>
   </dl>
   <dl>
     <dt class="require">
       <label for="email">メールアドレス</label>
     </dt>
-    <dd class="contactform-item-data">
-      <input type="email" name="email" id="email" class="contactform-input-text" placeholder="（例）〇〇〇＠gmail.com" required="">
-      <label class="error" for="email"></label>
+    <dd>
+      <div class="form_group">
+        <input type="email" name="email" id="email" class="contactform-input-text" placeholder="（例）〇〇〇＠gmail.com" required="">
+      </div>
     </dd>
   </dl>
 
@@ -154,19 +157,20 @@
     <dt class="require">
       <label for="email_confirm">メールアドレス（再確認）</label>
     </dt>
-    <dd class="contactform-item-data">
-      <input type="email" name="email_confirm" id="email_confirm" class="contactform-input-text" placeholder="※入力したメールアドレスを再度ご入力" required="">
-      <label class="error" for="email_confirm"></label>
+    <dd>
+      <div class="form_group">
+        <input type="email" name="email_confirm" id="email_confirm" class="contactform-input-text" placeholder="※入力したメールアドレスを再度ご入力" required="">
+      </div>
     </dd>
   </dl>
   <dl>
     <dt class="require">
       <label for="company_name">勤務先の会社名</label>
     </dt>
-    <dd class="contactform-item-data">
-      <input type="text" name="company_name" id="company_name" class="contactform-input-text" placeholder="（例）株式会社ステップ" required="" aria-invalid="true">
-
-      <label class="error" for="company_name"></label>
+    <dd>
+      <div class="form_group">
+        <input type="text" name="company_name" id="company_name" class="contactform-input-text" placeholder="（例）株式会社ステップ" required="" aria-invalid="true">
+      </div>
     </dd>
   </dl>
 
@@ -174,9 +178,10 @@
     <dt class="require">
       <label for="company_address">勤務先のご住所</label>
     </dt>
-    <dd class="contactform-item-data">
-      <input type="text" name="company_address" id="company_address" class="contactform-input-text" placeholder="（例）東京都八王子市三崎町4-11" required="" aria-invalid="true">
-      <label class="error" for="company_address"></label>
+    <dd>
+      <div class="form_group">
+        <input type="text" name="company_address" id="company_address" class="contactform-input-text" placeholder="（例）東京都八王子市三崎町4-11" required="" aria-invalid="true">
+      </div>
     </dd>
 
   </dl>
@@ -185,10 +190,10 @@
     <dt class="require">
       <label for="contact_info">勤務先の連絡先</label>
     </dt>
-    <dd class="contactform-item-data">
-      <input type="tel" name="contact_info" id="contact_info" class="contactform-input-text fix-byte fix-num" maxlength="11" pattern="\d{10,11}" title="ハイフンなしの10桁から11桁の電話番号を半角数字で入力してください。" placeholder="（例）0123456789　数字のみご入力" required="">
-
-      <label class="error" for="contact_info"></label>
+    <dd>
+      <div class="form_group">
+        <input type="tel" name="contact_info" id="contact_info" class="contactform-input-text fix-byte fix-num" maxlength="11" pattern="\d{10,11}" title="ハイフンなしの10桁から11桁の電話番号を半角数字で入力してください。" placeholder="（例）0123456789　数字のみご入力" required="">
+      </div>
     </dd>
   </dl>
 
@@ -196,9 +201,10 @@
     <dt class="require">
       <label for="monthly_income">手取り月収（平均）</label>
     </dt>
-    <dd class="contactform-item-data">
-      <input type="text" name="monthly_income" id="monthly_income" class="contactform-input-text" placeholder="（例）手取り20万円" required="" aria-invalid="true">
-      <label id="monthly_income-error" class="error" for="monthly_income"></label>
+    <dd>
+      <div class="form_group">
+        <input type="text" name="monthly_income" id="monthly_income" class="contactform-input-text" placeholder="（例）手取り20万円" required="" aria-invalid="true">
+      </div>
     </dd>
   </dl>
 
@@ -206,9 +212,10 @@
     <dt class="require">
       <label for="payday">給料日</label>
     </dt>
-    <dd class="contactform-item-data">
-      <input type="text" name="payday" id="payday" class="contactform-input-text" placeholder="（例）毎月10日" required="" aria-invalid="true">
-      <label class="error" for="payday"></label>
+    <dd>
+      <div class="form_group">
+        <input type="text" name="payday" id="payday" class="contactform-input-text" placeholder="（例）毎月10日" required="" aria-invalid="true">
+      </div>
     </dd>
   </dl>
 

@@ -1,10 +1,10 @@
 <?php
 
-$MAILER_DIR = "/.mailer";
-if (str_contains($_SERVER['REQUEST_URI'], '/arutemisu/')) {
-  $MAILER_DIR = "/arutemisu/.mailer";
-}
 require_once __DIR__ . "/../functions.php";
+$MAILER_DIR = "/.mailer";
+if (str_contains($_SERVER['REQUEST_URI'], FOLDER_TEST)) {
+  $MAILER_DIR = "/" . FOLDER_TEST . "/.mailer";
+}
 require_once $_SERVER['DOCUMENT_ROOT'] . $MAILER_DIR . "/mailer.php";
 
 checkPostFormWithConfirm();
