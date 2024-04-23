@@ -29,7 +29,7 @@ if (!defined('CORE')) {
         <div class="info">
           <div class="name">ケース01　20代男性</div>
           <div class="avatar">
-            <?php the_image('voice1.webp', 'ケース01　20代男性'); ?>
+            <?php the_image('voice1.webp', '20代男性のシルエット'); ?>
           </div>
         </div>
         <div class="detail ">
@@ -42,7 +42,7 @@ if (!defined('CORE')) {
         <div class="info">
           <div class="name">ケース02　20代男性</div>
           <div class="avatar">
-            <?php the_image('voice2.webp', 'ケース02　20代男性'); ?>
+            <?php the_image('voice2.webp', '20代男性のシルエット'); ?>
           </div>
         </div>
         <div class="detail ">
@@ -57,7 +57,7 @@ if (!defined('CORE')) {
         <div class="info">
           <div class="name">ケース03　30代男性</div>
           <div class="avatar">
-            <?php the_image('voice3.webp', 'ケース03　30代男性'); ?>
+            <?php the_image('voice3.webp', '30代男性のシルエット'); ?>
           </div>
         </div>
         <div class="detail ">

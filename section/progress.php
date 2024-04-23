@@ -41,7 +41,7 @@ if (!defined('CORE')) {
           お申し込み内容確認後、当店スタッフから返答いたします。
         </div>
         <div class="icon">
-          <img src="<?php asset('images/progress_icon_computer.svg'); ?>" alt="STEP 01" width="50" height="50">
+          <img src="<?php asset('images/progress_icon_computer.svg'); ?>" alt="PCのマーク" width="50" height="50">
         </div>
       </div>
       <div class="progress progress_left1 fadeup inview">
@@ -56,7 +56,7 @@ if (!defined('CORE')) {
           お客様情報と商品の写真から査定を行います。
         </div>
         <div class="icon">
-          <img src="<?php asset('images/progress_icon_phone.svg'); ?>" alt="STEP 02" width="50" height="50">
+          <img src="<?php asset('images/progress_icon_phone.svg'); ?>" alt="スマホのマーク" width="50" height="50">
         </div>
       </div>
       <div class="progress progress_left2 fadeup inview">
@@ -70,7 +70,7 @@ if (!defined('CORE')) {
           査定は数分で完了します。査定後、査定価格をお客様にお伝えし、査定価格にご納得いただけましたら即座にお客様の口座へご入金いたします。
         </div>
         <div class="icon">
-          <img src="<?php asset('images/progress_icon_search.svg'); ?>" alt="STEP 03" width="50" height="50">
+          <img src="<?php asset('images/progress_icon_search.svg'); ?>" alt="虫眼鏡のマーク" width="50" height="50">
         </div>
       </div>
       <div class="progress progress_left3 fadeup inview">
@@ -84,7 +84,7 @@ if (!defined('CORE')) {
           先払い撮影プランをご利用の場合、ご入金後、最長で30日以内に商品の郵送手続きをお願いします。商品が無事到着後、全ての取引は完了となります。
         </div>
         <div class="icon">
-          <img src="<?php asset('images/progress_icon_car.svg'); ?>" alt="STEP 04" width="50" height="50">
+          <img src="<?php asset('images/progress_icon_car.svg'); ?>" alt="トラックのマーク" width="50" height="50">
         </div>
       </div>
     </div>
@@ -107,7 +107,7 @@ if (!defined('CORE')) {
           お申し込み内容確認後、当店スタッフから返答いたします。
         </div>
         <div class="icon">
-          <img src="<?php asset('images/progress_icon_computer.svg'); ?>" alt="STEP 01" width="50" height="50">
+          <img src="<?php asset('images/progress_icon_computer.svg'); ?>" alt="PCのマーク" width="50" height="50">
         </div>
       </div>
       <div class="progress progress_left2 fadeup inview">
@@ -121,7 +121,7 @@ if (!defined('CORE')) {
           当店スタッフの案内に沿って、買取希望の商品を指定の住所へお送りください。商品到着後、お客様情報と実物の商品から査定を行います。
         </div>
         <div class="icon">
-          <img src="<?php asset('images/progress_icon_car.svg'); ?>" alt="STEP 02" width="50" height="50">
+          <img src="<?php asset('images/progress_icon_car.svg'); ?>" alt="トラックのマーク" width="50" height="50">
         </div>
       </div>
       <div class="progress progress_left1 fadeup inview">
@@ -136,7 +136,7 @@ if (!defined('CORE')) {
           査定価格にご納得いただけましたら即座にお客様の口座へご入金いたします。
         </div>
         <div class="icon">
-          <img src="<?php asset('images/progress_icon_search.svg'); ?>" alt="STEP 03" width="50" height="50">
+          <img src="<?php asset('images/progress_icon_search.svg'); ?>" alt="虫眼鏡のマーク" width="50" height="50">
         </div>
       </div>
       <div class="progress fadeup inview">
@@ -150,7 +150,7 @@ if (!defined('CORE')) {
           お客様の口座へお振込みが完了しましたら、全ての取引は完了となります。
         </div>
         <div class="icon">
-          <img src="<?php asset('images/progress_icon_phone.svg'); ?>" alt="STEP 04" width="50" height="50">
+          <img src="<?php asset('images/progress_icon_phone.svg'); ?>" alt="お金のマーク" width="50" height="50">
         </div>
       </div>
     </div>

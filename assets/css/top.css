@@ -404,6 +404,10 @@
 @media screen and (min-width: 768px) {
   #recommended .groups .item {
     width: 48rem;
+    height: 15.2rem;
+    background-image: url(../images/recommended_item_bg.webp);
+    background-position: top center;
+    background-repeat: no-repeat;
   }
 }
 #recommended .groups .item .item_detail {

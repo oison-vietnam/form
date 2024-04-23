@@ -15,7 +15,7 @@ require_once __DIR__ . "/functions.php"; ?>
   <?php stack('head'); ?>
   <meta property="og:locale" content="ja_JP">
   <meta property="og:type" content="<?php $is_front_page ? 'website' : 'article'; ?>">
-  <meta property="og:site_name" content="【ARTEMIS アルテミス】">
+  <meta property="og:site_name" content="<?php site_name(); ?>">
   <meta property="og:image" content="<?php asset('images/og-image.png') ?>">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -112,7 +112,7 @@ require_once __DIR__ . "/functions.php"; ?>
   </footer>
   <a href="<?php lp_home_url(); ?>" id="back_to_top">
     <span class="inn">
-      <img src="<?php asset('images/icon_to_top.svg') ?> " alt="To TOP" width="70" height="71">
+      <img src="<?php asset('images/icon_to_top.svg') ?> " alt="TOPへ戻る" width="70" height="71">
     </span>
   </a>
   <?php stack('footer'); ?>

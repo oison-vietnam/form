@@ -12,11 +12,26 @@
     .menu_footer {
       color: #313131;
       font-weight: bold;
-
       font-size: 1.1em;
-
       a {
         color: inherit;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -0.5em;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0.2rem;
+          background-image: linear-gradient(to right, #ff00be 0%, #ff00be 29%, #3aa1ff 72%, #3fead7 100%);
+          transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
       }
     }
     .copyright {

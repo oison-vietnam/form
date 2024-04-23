@@ -70,35 +70,34 @@ if (file_exists(__DIR__ . "/tracking_body.php")) require_once __DIR__ . "/tracki
         </h1>
       </div>
       <div class="thanks-content">
-        <p>お問い合わせ頂き、<br class="hide_pc">誠にありがとうございます。</p>
         <p>
-          この度は弊社の買取査定サービスへ<br class="hide_pc">お申込みをいただき<br>
-          誠にありがとうございます。<br>
-          買取サービスのご利用方法や手続きについては<br>
-          以下の公式LINEアカウントをご登録いただくと<br class="hide_pc">便利ですので是非ご活用ください。
+          この度は当店の買取査定サービスへ<br class="hide_pc">お申込みをいただき<br>
+          誠にありがとうございます。
+        </p>
+
+        <p>
+          確認のためお客様へ自動返信メールを<br class="hide_pc">お送りさせて頂きました。<br>
+          万が一、自動返信メールが届いてない場合は<br>
+          お手数ですが、再度ご連絡ください<br class="hide_pc">ますようお願い致します。
         </p>
         <div class="line_wrap">
           <div class="line_content">
-            <a href="https://lin.ee/XXXXXX" target="_blank" class="line">
-              <span class="strong">［公式LINE］</span><br>
-              <hr class="line1">
-              下記のURLより、公式LINEアカウントを<br class="hide_pc">登録することができます。<br>
+            <a href="<?php line_url(); ?>" target="_blank" class="line">
+              <span class="line_title">ARTEMIS -アルテミス-<br>公式LINEアカウントのご案内</span><br>
+              買取サービスのご利用方法や手続きについては<br>
+              以下の公式LINEアカウントをご登録いただくと<br>
+              便利ですので是非ご活用ください。<br>
               <br>
               公式アカウント<br>
-              https://lin.ee/XXXXXX<br>
-              <hr class="line1">
+              LINE ID：<?php echo get_config('line_id'); ?><br>
+              <span class="btn_line">LINEページへ進む</span>
+              <br>
             </a>
           </div>
           <div class="line_bg">
-            <img src="<?php asset('images/thank_bg.webp'); ?>" alt="［公式LINE］" width="786" height="540">
+            <img src="<?php asset('images/thank_bg.webp'); ?>" alt="カラフルな枠" width="786" height="540">
           </div>
         </div>
-
-        <p>
-          ※確認のためお客様へ自動返信メールを<br class="hide_pc">お送りさせて頂きました。<br>
-          万が一、自動返信メールが届いてない場合は<br>
-          お手数ですが、<br class="hide_pc">再度ご連絡くださいますようお願い致します。
-        </p>
         <p class="button_back_top">
           <a class="button-neon button-neon-1" href="<?php lp_home_url(); ?>">TOPに戻る</a>
         </p>

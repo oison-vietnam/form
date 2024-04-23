@@ -150,6 +150,14 @@ input[type="password"] {
     background-color: #fff;
     color: #000;
   }
+  &::-ms-input-placeholder {
+    /* Edge 12-18 */
+    color: #dadada;
+  }
+
+  &::placeholder {
+    color: #dadada;
+  }
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -561,7 +569,7 @@ textarea {
   }
 }
 .formTextNote {
-  color: #777777;
+  color: #dadada;
   padding: 0;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -593,5 +601,10 @@ textarea {
   flex-direction: column;
   .file_label {
     padding: 1rem 0;
+  }
+}
+@include sp {
+  .previous {
+    order: 2;
   }
 }

@@ -5,7 +5,13 @@
     <li>送信完了</li>
   </ul>
 </div>
-<h2 class="h2-title">
+<div class="section_desc">
+  <h2 class="form_title">
+    <span class="txt_grd">送信内容確認</span>
+  </h2>
+  以下の内容でよろしければ<br class="hide_pc"><span class="txt_grd">送信する</span>を押してください。
+</div>
+<h2 class="form_title">
   <span class="txt_grd">商品情報</span>
 </h2>
 
@@ -27,7 +33,7 @@
   </dd>
 </dl>
 
-<h2 class="h2-title">
+<h2 class="form_title">
   <span class="txt_grd">個人情報の画像</span>
 </h2>
 
@@ -42,8 +48,8 @@
   </dd>
 </dl>
 
-<h2 class="h2-title">
-  <span class="txt_grd">個人情報をご入力</span>
+<h2 class="form_title">
+  <span class="txt_grd">個人情報</span>
 </h2>
 
 <dl>

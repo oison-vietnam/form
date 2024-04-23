@@ -1,13 +1,14 @@
 {
-  "from_email": "application@iconvn.xsrv.jp",
+  "from_email": "info@kaitori-artemis.com",
   "from_name": "【ARTEMIS アルテミス】",
   "admin_subject": "【ARTEMIS -アルテミス-】お客様から買取査定依頼のお知らせ",
-  "admin_email": "murase@digitalship.asia",
-  "admin_bcc": "muraaetakashi@gmail.com",
+  "admin_email": "artemis.kaitori.info@gmail.com",
+  "admin_bcc": false,
   "customer_subject": "【ARTEMIS -アルテミス-】お申し込みいただき、誠にありがとうございます。",
-  "customer_reply_email": "application@iconvn.xsrv.jp",
-  "site_name": "【ARTEMIS アルテミス】",
-  "line_url": "https://lin.ee/xxxx",
+  "customer_reply_email": "artemis.kaitori.info@gmail.com",
+  "site_name": "ARTEMIS -アルテミス-",
+  "line_id": "@680hrzvo",
+  "line_url": "https://line.me/R/ti/p/@680hrzvo",
   "meta_robots": "noindex,nofollow",
   "lp": ""
 }

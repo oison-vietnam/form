@@ -33,7 +33,7 @@ if (!defined('CORE')) {
     <div class="main_img fadeup inview">
       <picture>
         <source media="(max-width: 767px)" srcset="<?php asset('images/main_sp.webp'); ?>">
-        <?php the_image('main.webp', '好きなタイミングで簡単お申し込み・査定無料'); ?>
+        <?php the_image('main.webp', '美女のイラスト'); ?>
       </picture>
     </div>
   </div>

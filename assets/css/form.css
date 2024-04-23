@@ -175,6 +175,17 @@ input[type=password].valid {
   background-color: #fff;
   color: #000;
 }
+textarea::-moz-placeholder, input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=number]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=password]::-moz-placeholder {
+  color: #dadada;
+}
+textarea::placeholder,
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=number]::placeholder,
+input[type=tel]::placeholder,
+input[type=password]::placeholder {
+  color: #dadada;
+}
 
 input[type=radio],
 input[type=checkbox] {
@@ -601,7 +612,7 @@ textarea {
   }
 }
 .formTextNote {
-  color: #777777;
+  color: #dadada;
   padding: 0;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -639,4 +650,10 @@ textarea {
 }
 .file_wrap .file_label {
   padding: 1rem 0;
+}
+
+@media screen and (max-width: 767px) {
+  .previous {
+    order: 2;
+  }
 }

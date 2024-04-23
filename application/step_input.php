@@ -6,7 +6,7 @@
   </ul>
 </div>
 <div class=" contactform">
-  <h2 class="h2-title">
+  <h2 class="form_title">
     <span class="txt_grd">商品情報</span>
   </h2>
   <dl>
@@ -34,7 +34,7 @@
       </div>
     </dd>
   </dl>
-  <h2 class="h2-title">
+  <h2 class="form_title">
     <span class="txt_grd">個人情報の画像</span>
   </h2>
 
@@ -78,7 +78,7 @@
     </dd>
   </dl>
 
-  <h2 class="h2-title">
+  <h2 class="form_title">
     <span class="txt_grd">個人情報をご入力</span>
   </h2>
   <dl>

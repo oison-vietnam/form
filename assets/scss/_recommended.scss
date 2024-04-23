@@ -45,6 +45,10 @@
       position: relative;
       @include pc {
         width: 48rem;
+        height: 15.2rem;
+        background-image: url(../images/recommended_item_bg.webp);
+        background-position: top center;
+        background-repeat: no-repeat;
       }
       .item_detail {
         letter-spacing: initial;
