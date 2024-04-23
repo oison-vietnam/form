@@ -35,9 +35,19 @@ $photos['upfile2'] = uploadFile('upfile2');
 $photos['upfile3'] = uploadFile('upfile3');
 
 
-if (send_email($admin_subject, $message_admin, $admin_email,  $customer_email, $admin_bcc, $photos)) :
+$admin_emails = explode(",", $admin_email);
+$main_admin = array_shift($admin_emails);
+if (send_email($admin_subject, $message_admin, $main_admin,  $customer_email, $admin_bcc, $photos)) :
+
+  foreach ($admin_emails as $sub_admin) :
+    $sub_admin = trim($sub_admin);
+    send_email($admin_subject, $message_admin, $sub_admin,  $customer_email, false, $photos);
+  endforeach;
+
   send_email($customer_subject, $message_customer, $customer_email, $customer_reply_email, false, $photos);
   email_success();
   exit;
+
 endif;
+
 email_failer();
