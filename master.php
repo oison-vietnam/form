@@ -14,7 +14,7 @@ require_once __DIR__ . "/functions.php"; ?>
   <?php meta_robots(); ?>
   <?php stack('head'); ?>
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:type" content="<?php $is_front_page?'website':'article';?>">
+  <meta property="og:type" content="<?php echo $is_front_page?'website':'article';?>">
   <meta property="og:site_name" content="【SITE_NAME】">
   <meta property="og:image" content="<?php asset('images/og-image.png') ?>">
   <meta property="og:image:width" content="1200">
