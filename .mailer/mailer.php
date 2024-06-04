@@ -161,6 +161,9 @@ function email_success()
 
 function email_failer()
 {
-  header('Location: ../error/');
+?>
+  <p>お問い合わせ内容を送信できませんでした。</p>
+  <p>しばらくたってから、もう一度お試しください。</p>
+<?php
   exit;
 }

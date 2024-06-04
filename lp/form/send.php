@@ -46,4 +46,5 @@ if (send_email($admin_subject, $message_admin, $main_admin,  $customer_email, $a
 
 endif;
 
-email_failer();
+require_once __DIR__."/error.php";
+exit;

@@ -7,6 +7,7 @@ if (str_contains($_SERVER['REQUEST_URI'], '/thumucdemo/')) {
 require_once __DIR__ . "/../functions.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $MAILER_DIR . "/mailer.php";
 
+
 checkPostFormWithConfirm();
 
 $from_email = get_config('from_email');
@@ -44,4 +45,5 @@ if (send_email($admin_subject, $message_admin, $main_admin,  $customer_email, $a
   exit;
 
 endif;
-email_failer();
+
+require_once __DIR__."/error.php";
