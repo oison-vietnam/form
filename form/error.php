@@ -1,6 +1,6 @@
 <?php
 if(!defined('CORE'))
-header('Location: ./form/');
+header('Location: ../form/');
 
 global $robots;
 $robots = 'noindex';
