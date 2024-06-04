@@ -361,7 +361,7 @@
               <li>
                 <div class="label">自画撮り（セルフィー）</div>
                 <div class="input form_group">
-                  <input type="file" class="contactform-input-file" id="upfile1" name="upfile1">
+                  <input type="file" class="contactform-input-file" id="upfile1" name="upfile1" accept=".png,.jpg,.jpeg,.gif;capture=camera">
                   <div id="upfile1_preview"></div>
                 </div>
                 <ul class="form_file_note">
@@ -377,7 +377,7 @@
                   <div class="group_item">
                     <span class="item_label red bold">表面</span>
                     <div class="input form_group">
-                      <input type="file" class="contactform-input-file" id="upfile2" name="upfile2">
+                      <input type="file" class="contactform-input-file" id="upfile2" name="upfile2" accept=".png,.jpg,.jpeg,.gif;capture=camera">
 
                       <div id="upfile2_preview"></div>
                     </div>
@@ -385,7 +385,7 @@
                   <div class="group_item">
                     <span class="item_label red bold">裏面</span>
                     <div class="input form_group">
-                      <input type="file" class="contactform-input-file" id="upfile3" name="upfile3">
+                      <input type="file" class="contactform-input-file" id="upfile3" name="upfile3" accept=".png,.jpg,.jpeg,.gif;capture=camera">
                       <div id="upfile3_preview"></div>
                     </div>
                   </div>
